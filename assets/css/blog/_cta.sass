@@ -1,0 +1,47 @@
+.home
+    .cta
+        background: url(../img/blog/cta_bg.png) no-repeat center center fixed
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+        z-index: 100
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        .wrapper
+            margin-top: 15px
+            margin: 0 auto
+            padding-top: 15px
+            text-align: center
+            .logo
+                margin-top: 15%
+                svg
+                    +size(75%)
+
+                    path
+                        +transition($trans)
+                        fill: $bg-color-light
+                        &:hover
+                            fill: #ff6b57
+            h2
+                color: $bg-color-light
+                font-weight: 800
+                margin-top: 15%
+            p
+                margin-top: 15%
+                font-size: 20px
+                color: $bg-color-light
+                strong
+                    font-size: 22px
+                    font-weight: 600
+                a
+                    +transition($trans)
+                    color: rgba(255, 255, 255, 0.85)
+                    font-size: 20px
+                    font-style: italic
+                    &:hover
+                        color: $primary
+                        font-weight: 500

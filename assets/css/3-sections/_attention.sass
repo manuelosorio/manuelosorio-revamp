@@ -1,0 +1,37 @@
+
+.attention
+	position: relative
+	bottom: -35em
+	// height: 150px
+	width: 100%
+	.col
+		background: #F4EE1C
+		color: darken(#F4EE1C, 25%)
+		margin: 0 auto
+		font-size: 12px
+		padding:
+			top: 20px
+			right: 5px
+			bottom: 20px
+			left: 5px
+		text-align: left
+		overflow-wrap: break-word
+@media all and (min-width:480px)
+	.fixed ~ .attention
+
+	.attention
+		bottom: -44em
+@media all and (min-width:540px)
+	.fixed ~ .attention
+		bottom: -42.5em
+	.attention
+		bottom: -40em
+@media all and (min-width: 640px)
+	.fixed ~ .attention
+		bottom: -53.5em
+	.attention
+		bottom: -50em
+		margin: 28px auto
+		.col
+			text-align: center
+			font-size: 15px

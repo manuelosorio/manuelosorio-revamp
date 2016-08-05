@@ -1,0 +1,41 @@
+.menu
+	position: fixed
+	z-index: 2
+	top: 15px
+	right: 15px
+	cursor: pointer
+	+transition()
+	.bars
+		height: 5px
+		width: 25px
+		border-radius: 2px
+		margin-bottom: 5px
+		background: $white
+		display: block
+
+.side-bar
+	//+position(fixed, top right bottom left)
+	+position(fixed, 0px -180px 0px null)
+	z-index: 0
+	background: $black
+	width: 120px
+	padding: 30px
+	+transition()
+	ul a
+		color: $white
+		+transition(500ms ease)
+		&:hover
+			color: $teal
+.clock, .footer
+	+transition()
+#check-box
+	display: none
+	&:checked + .page-wrap
+		.menu
+			right: 200px
+		.side-bar
+			right: 0px
+		#contian
+			.clock, .footer
+				padding-right: 180px
+	

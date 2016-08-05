@@ -1,0 +1,140 @@
+.section-clients
+    position: relative
+    overflow-x: hidden
+.clients-wrap
+    width: 100%
+    position: relative
+
+
+    .client-unit
+        max-width: 750px
+        margin: 50px auto
+        position: relative
+
+        z-index: 1
+        display: none
+
+        &.active-client
+            +display(flex)
+            @extend %bounceOut
+
+        .client-face
+            min-width: 300px
+            text-align: center
+
+            img
+                max-width: 100px
+                border-radius: 50%
+
+            .client-name
+                display: block
+                text-transform: uppercase
+                font-weight: 400
+                letter-spaceing: 1px
+
+            .client-title
+                font-style: normal
+                font-size: 12px
+                color: $bg-color-dark
+                font-weight: 300
+
+        .client-content
+            font-size: 18px
+            line-height: 36px
+            font-wieght: 300
+            margin-top: -10px
+            position: relative
+// Logos
+.clients-logos
+    position: relative
+    width: 100%
+    max-width: 750px
+    +display(flex)
+    margin: 50px auto 100px
+    padding-bottom: 20px
+    +align-items(center)
+    +justify-content(space-around)
+
+    .client-logo
+        height: 80px
+        min-width: 200px
+        cursor: pointer
+        margin: 0 20px
+        border-bottom: 4px solid transparent
+        padding-bottom: 15px
+        opacity: .75
+
+        &.active-client
+            border-bottom: 4px solid $primary
+            opacity: 1
+
+.client-quote-mark
+    +position(absolute, -25px null null -30px )
+    +size(75px)
+    z-index: -10
+    opacity: 0.5
+
+    path
+        fill: $primary
+
+// controls
+.client-controls
+    +position(absolute, 0px 0px 0px 0px)
+
+    > div
+        +size(40px)
+        margin-top: -20px
+        cursor: pointer
+
+        path
+            fill: $primary
+
+    .client-control-next
+        +position(absolute, 50% 10px null null)
+
+    .client-control-prev
+        +position(absolute, 50% null null 10px)
+
+
+    // Clients Mobile Nav
+.clients-mobile-nav
+    text-align: center
+    display: none
+    span
+        cursor: pointer
+        display: inline-block
+        +size(16px)
+        border-radius: 50%
+        border: solid 2px $header-bg
+        opacity: .5
+        margin: 0px 10px
+
+        &.active-client
+            opacity: 1
+
+@media screen and (max-width: 750px)
+
+    .client-controls
+        display: none
+
+    .clients-wrap
+
+        .client-unit.active-client
+            display: block
+            position: relative
+            margin: 0px
+            left: auto
+
+            .client-face
+                margin-bottom: 20px
+
+            .client-content
+                padding: 0px 30px
+                max-width: 400px
+                margin: 0 auto 50px
+            .client-quote-mark
+                left: 15px
+    .clients-logos
+        display: none
+    .clients-mobile-nav
+        display: block

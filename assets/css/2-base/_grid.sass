@@ -1,0 +1,43 @@
+@mixin flexGrid($count,$gutter)
+	// calculates single grid item
+	$oneGridItemWidth: 100 / $count
+	//calculates excess margin equally to the column count
+	$extra: $gutter / $count
+	.row
+		display: flex
+		overflow: hidden
+		.col
+			float: left
+			flex-wrap: nowrap
+			+ .col
+				margin-left: unquote($gutter + '%')
+	// The loop that creates all of your grid item classes and widths
+	@for $i from 1 through $count
+		.col-#{$i}
+			width: unquote(($oneGridItemWidth * $i) - $gutter + ($extra * $i) + '%')
+	//Flex Grid Breakpoint Styling
+	@media screen and (max-width:700px)
+		.row
+			flex-direction: column
+			flex-wrap: wrap
+			+ .row
+				margin-top: 0
+			.col
+				+ .col
+					margin-left: 0
+			@for $i from 1 through $count
+				.col-#{$i}
+					width: 100%
+					margin-top: 20px
+					//Loop to create orders for you to rearrange cols on breakpoints
+				.col.col-order-#{$i}
+					order: #{$i}
+// Defining Grid
+@include flexGrid(12,2)
+//column count, gutter
+//Presentation Only
+// body
+	// font-family: sans-serif
+	// padding: 50px
+.row + .row
+	margin-top: 20px

@@ -1,0 +1,165 @@
+.nav
+  position: relative
+  height: 40px
+  z-index: 5
+  // width: 100%
+  left: 0
+  +display(flex)
+  +justify-content(space-around)
+  .logo
+    position: absolute
+    left: 15%
+    width: 100px
+    // z-index: 1
+    svg
+      height: 33px
+      width: 100px
+      path
+        +transition($trans)
+        fill: $bg-color-light
+      &:hover path
+        fill: #primary
+  &::before
+    content: ""
+    width: 90%
+    position: relative
+    left: 7px
+    height: auto
+    +transition($trans)
+    +transform(skewX(25deg))
+  .flex-right
+    +display(flex)
+    +flex-wrap(wrap)
+    +justify-content(flex-end)
+    width: auto
+
+    .links
+      position: absolute
+      top: 5px
+      right: 10%
+      a
+        +transition($trans)
+        color: rgba($bg-color-light, 0.85)
+        font-size: 20px
+        margin-left: 15px
+        &.active
+          color: $primary
+          font-weight: 600
+          cursor: default
+          &:hover
+            color: $primary
+            font-weight: 600
+        &:hover
+          color: $primary
+          font-weight: 500
+    .menu
+      // cursor: pointer
+      // color: $bg-color-light
+      display: none
+      // +transition($trans)
+.nav.fixed
+  // height: 60px
+  // padding-bottom:	0px !important
+  // background: rgba(50,50,50,0.8)
+  position: fixed
+  right: 0
+  transition: ($trans)
+
+  &::before
+    background: $header-bg
+    box-shadow: 3px 5px 15px rgba(0,0,0,0.45)
+    right: 0
+    padding: 20px 0
+  // .right li a
+  //   text-decoration: none
+  //   float: right
+  //   color: rgba(254,254,242,0.8)
+  //   margin-right: 25px
+  //   margin-top: 0px
+  // .left li a svg
+  //   margin: -25px 0
+  //   height: auto
+  //   fill: rgba(254,254,242,0.8)
+  //   max-width: 100px
+  //
+  //   li a svg path
+  //     fill: rgba(254,254,242,0.8)
+  // li a svg path:hover
+  //   fill: #ff6b57
+
+.hide
+  display: none
+  visibility: hidden
+.mobile-nav
+  display: flex
+  text-align: center
+  flex-direction: column
+  flex-wrap: wrap
+  max-height: 215px
+  height: auto
+  justify-content: center
+  align-content: stretch
+  align-items: stretch
+  z-index: -1
+  width: 100vw
+  position: absolute
+  padding-bottom: 15px
+  top: 40px
+  left: 0
+  background-color: $bg-color-dark
+  transform: translateY(-200px) scale(0)
+  +transition($trans)
+  div
+    padding:
+      // left: 15px
+
+    a
+      border-bottom-style: solid
+      border-bottom-width: medium
+      border-bottom-color: #404040
+      color: rgba(255, 255, 255, 0.85)
+      font-size: 20px
+      &.active
+        color: $primary
+        font-weight: 600
+        cursor: default
+        border-bottom-color: $primary
+
+      &:hover
+        color: $primary
+        font-weight: 500
+        border-bottom-color: $primary
+@media screen and (max-width: 870px)
+  .links
+    display: none
+  .menu
+    // position: absolute
+    // right: 10%
+    display: initial !important
+    // top: 0
+  .nav.fixed
+    // height: 60px
+    // padding-bottom:	0px !important
+    // background: rgba(50,50,50,0.8)
+    position: fixed
+    right: 0
+    transition: ($trans)
+
+    &::before
+      background: $header-bg
+      box-shadow: 3px 5px 15px rgba(0,0,0,0.45)
+      right: 0
+      padding: 20px 0
+      +transform(skewX(25deg)scale(1))
+  .nav::before
+    +transform(translate(-15px) scale(0))
+  .nav.active::before
+    transform: skew(0)
+    width: 100%
+    left: 0
+    background: $header-bg
+    box-shadow: 3px 5px 15px rgba(0,0,0,0.45)
+    +transform(translate(0) sscale(1))
+  .nav.active * .mobile-nav
+    // display: flex
+    transform: translateY(0) scale(1)

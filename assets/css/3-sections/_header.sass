@@ -1,0 +1,82 @@
+header
+    height: 350px
+    background: $header-bg
+    margin-top: -50px
+
+    .logo
+        +size(50px)
+        //background: #bce
+        float: left
+        margin: 10px 0 0 30px
+
+    nav
+        float: right
+        margin: 30px 30px 0 0
+
+        a
+            display: inline-block
+            margin-left: 20px
+
+            color: rgba(4, 4, 4, 0.5)
+            @extend %small-bold
+
+        a:hover
+            color: rgba(0, 0, 0, 0.75)
+
+    h1
+        text-align: center
+        marign-bottom: 20px
+        font:
+            size: 72px
+            weight: 700
+        color: rgba(236, 240, 241,1.0)
+        text-transform: Uppercase
+
+        clear: both
+
+        padding-top: 85px
+
+        span
+
+            display: inline-block
+            padding: 0.05em 0.02em
+            //border:
+                color: white
+                style: solid
+                size: thick
+
+    .kicker
+        text-align: center
+        @extend %small-bold
+
+        letter-spacing: 0.05em
+        color: white
+        line-hieght: 1
+
+
+@media screen and (max-width: 330px)
+    header
+        .logo
+            +size(50px)
+            /*background: #bce*/
+
+            margin: 30px 0 0 125px
+
+        nav
+            a
+                margin-left: 5px
+                font:
+                    size: 1em
+
+
+
+
+
+
+
+
+
+
+
+
+

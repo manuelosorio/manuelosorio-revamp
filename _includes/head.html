@@ -1,0 +1,13 @@
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/all2.css"/>
+    {% for head in site.data.settings.head %}
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="Keywords" content="{{ head.keywords}}, {{ page.keywords }}" />
+    <meta http-equiv="default-style">
+    <meta name="author" content="{{ head.name }}" />
+    <meta name="description" content="{{ head.description }}" />
+    <meta name="og:description" content="{{ head.description }}" />
+    {% endfor %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />

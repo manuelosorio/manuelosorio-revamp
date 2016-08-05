@@ -1,0 +1,56 @@
+#mc_embed_signup
+    margin-top: 50px
+    .mc-field-group
+        h3
+            font-family: $base-font-family
+#mc_embed_signup_scroll
+    display: flex
+    flex-direction: column
+    font-size: 20px
+    margin: 50px auto
+    .mc-field-group
+
+        position: relative
+        margin: 0
+
+        h3
+            font-family: $base-font-family
+
+        input
+            background: #ECECEC
+            color: $primary
+            border:
+                radius: 5px
+                style: solid
+                color: $primary
+            padding-left: 15px
+            transition: 500ms ease-in-out
+            -webkit-transition: 500ms ease-in-out
+            -moz-transition: 500ms ease-in-out
+            -o-transition: 500ms ease-in-out
+
+            &[type="email"], [type="text"]
+                color: $primary
+            &:hover
+                color: $primary-light
+
+            &::-webkit-input-placeholder
+                color: $primary-light
+
+            &::-moz-input-placeholder
+                color: $primary-light
+
+            &::-o-input-placeholder
+                color: $primary-light
+
+            &[type=email]
+                margin-left: 15px
+
+
+        input[type=submit]
+            border-style: solid !important
+            border-radius: 5px !important
+            border-color: #f15e45 !important
+            color: #f15e45 !important
+            background-color: transparent !important
+@media screen and (min-width:700px)

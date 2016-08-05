@@ -1,0 +1,92 @@
+#-------------------------------
+#index head settings
+
+head:
+
+- {title: Manuel Osorio  | Graphic Designer, name: 'Manuel Osorio', description: 'Manuel Osorio is a graphic designer that makes awesome things for people.', email: 'hey@manuelosorio.me', keywords: "Manuel Osorio, Graphic Designer, MKDesignz, Logo Designer, Web Designer, Manuel, Osorio, Manny Osorio, Manny, Web Devolper"}
+# General Site Settings
+
+
+
+title: Manuel Osorio
+
+description: Graphic Designer // Web Designer
+
+email: hey@manuelosorio.me
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+
+
+
+- {name: About, url: '/', target: '_self'}
+- {name: Work, url: 'work', target: '_self'}
+- {name: Contact, url: 'contact', target: '_self'}
+- {name: Blog, url: 'blog', target: '_self'}
+#- {name: Shop, url: 'shop'}
+
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+
+  description: 'Manuel Osorio is a graphic designer that deos logo design and designs/codes websites.'
+
+  rel-author: 'Manuel Osorio'
+
+  rel-publisher: 'Manuel Osorio'
+
+#-------------------------------
+# About Section
+
+skills:
+# - {name: <i class="fa fa-heart"></i> Penguins, value: '10'}
+
+- {name: Communication, value: '9'}
+
+- {name: Icon Design, value: '9'}
+
+- {name: Listening, value: '9'}
+
+- {name: Logo Design, value: '9'}
+
+- {name: Organization, value: '8'}
+
+- {name: Planning, value: '8'}
+
+- {name: Project Management, value: '8'}
+
+- {name: Visualization, value: '9'}
+
+
+
+#--------------------------------------------
+
+#Work Section
+
+projects:
+- {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
+- {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
+- {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
+#- {name: Personal Branding, folder: 'circle-pop', file: 'circle-pop.html'}
+- {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
+- {name: Storm of Color, folder: 'storm-of-color', file: 'storm-of-color.html'}
+- {name: Stickers, folder: 'stickers', file: 'stickers.html'}
+
+#--------------------------------------------
+
+#client Section
+
+clients:
+
+- {avatar: 'lorem-pixel-1.jpg', name: 'Heley Alden', title: 'Generic Company', qoute: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>Suspendisse velit dui, egestas eu porttitor sed, varius quis risus.</p>', logo: 'GenericCompany.png'}
+
+- {avatar: 'lorem-pixel-2.jpg', name: 'Heley Alden', title: 'Generic Company', qoute: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>Suspendisse velit dui, egestas eu porttitor sed, varius quis risus.</p>', logo: 'GenericCompany.png' }
+
+- {avatar: 'lorem-pixel-3.jpg', name: 'Heley Alden', title: 'Generic Company', qoute: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>Suspendisse velit dui, egestas eu porttitor sed, varius quis risus.</p>', logo: 'GenericCompany.png' }
+
+- {avatar: 'lorem-pixel-4.jpg', name: 'Heley Alden', title: ' Generic Company ', qoute: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </strong>Suspendisse velit dui, egestas eu porttitor sed, varius quis risus.</p>', logo: 'GenericCompany.png' }

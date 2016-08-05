@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "New Year"
+date:   2016-01-02 11:59pm
+author: Manuel Osorio
+keywords: "Resolution, New Year, 2016"
+categories:
+permalink: blog/posts/2016/january/:title/
+preview: "As 2015 comes to a close and a new Year begins, I have started thinking all I have accomplished design wise in the past year..."
+---
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As 2015 comes to a close and a new Year begins, I have started thinking all I have accomplished design wise in the past year. I've gotten better at motion graphics, made my own website, imporved when comes to using multiple fonts, made my own stickers, and made a timer that counts down to the new year. I have several goals for 2016:
+
+1. Update my website/portfolio
+	* Make it more User Friendly
+	* Change the layout and Color scheme (its overall look)
+	* Find away to have potential clients want to look more into the site
+2. Start a new YouTube channel
+	* Branding it (Channel Trailer, Banner, Avatar, intro title and outro title, and lower thirds or upper thirds Call to Action Cards)
+	* Be consistent posting new content by setting a schedule
+	* Show my design process via speed arts
+3. Become more consistent on posting in this blog
+	* Making a list of what to write about
+	* Changing the day of the week I upload to one that works better with me
+4. Start challenging myself more to get much better at Graphic/Web Design
+	* Redesigning outdated websites
+	* Learning to do more things with code and applying what I learn
+	* Learn to draw better
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I Hope 2016 is a great year. Until next time,
+
+&nbsp;&nbsp;&nbsp;Manuel Osorio

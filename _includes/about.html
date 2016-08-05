@@ -1,0 +1,35 @@
+<section id="about">
+    <h3>About Me!</h3>
+    <div class="flex-wrap">
+        <div class="profile-wrap">
+            <div class="face-img"></div>
+        </div>
+        <div class="blurp">
+            <p><strong>Hey, my name is Manuel Osorio and I'm a graphic designer.</strong>
+              I will work diligently to ensure the best results according to your needs. My services ranges from
+              brand identity to webpages. If you are in need of a logo or website please leave me an email at
+              hey@manuelosorio.me or go to the contact page and email me from there.
+            </p>
+        </div>
+    </div>
+    <br>
+</section>
+<section id="skills">
+  <h3>Skills</h3>
+  {% if site.data.settings.skills %}
+  <div class="skills-wrap">
+    {% for skill in site.data.settings.skills %}
+    <div class="skills-unit">
+      <div class="skills-label">{{ skill.name }}</div>
+      <div class="skills-icons skills-{{ skill.value }}">
+        {% for i in (1..10) %}
+        <span></span>
+        {% endfor %}
+
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>

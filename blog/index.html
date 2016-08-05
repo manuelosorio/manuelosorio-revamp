@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Blog"
+keywords: "Blog"
+---
+
+
+<div class="blog-header">
+    <div class="title">
+        <h1>Manuel Osorio</h1>
+        <h1>Blog</h1>
+    </div>
+</div>
+<div class="wrapper">
+
+<div class="home">
+
+  <ul class="post-list">
+
+    {% for post in paginator.posts %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="color:#f15e45;">{{ post.title }}</a>
+        </h2>
+
+        <span class="post-meta" style="color:#f69c8c;">Posted at  {{ post.date | date: "%b %-d, %Y" }} • Author: {{ post.author }}</span><br />
+
+        <span>{{ post.preview }}</span>
+
+        <span href="{{ post.url | prepend: site.baseurl }}" style=""></span>
+
+        <a class="post-link" id="button" href="{{ post.url | prepend: site.baseurl }}" style="color:#f15e45;">Read More!</a>
+
+        <span class="post-underline"></span>
+
+      </li>
+
+    {% endfor %}
+
+  </ul>
+<!-- Pagination links -->
+
+<div class="pagination">
+
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous fa fa-angle-left"></a>
+  {% else %}
+    <span class="previous disabled"></span>
+  {% endif %}
+
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+            <span>{{ page }}</span>
+        {% elsif page == 1 %}
+          <a href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+
+
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next fa fa-angle-right"></a>
+  {% else %}
+    <span class="next disabled"></span>
+  {% endif %}
+</div>
+
+
+
+
+    <!-- <div class="cta">
+        <div class="wrapper">
+            <a class="logo" href="/">{% include icons/icon-logo.html %}</a>
+            <h2>I'm taking on my next challenge!</h2>
+            <p>
+               <strong>On September 30, 2015 </strong>
+               I'll launch my offical blog. <a href="/blog/posts/2015/august/Welcome-to-my-blog">Click here </a>to read my first post.
+            </p>
+
+        </div>
+    </div> -->
+
+</div>
+</div>
+
+        <script src="../assets/js/jquery-2.1.1.min.js"></script>
+        <script src="../assets/js/functions.js"></script>
+        <script src="../assets/js/toggleNav.js"></script>

@@ -1,0 +1,97 @@
+## Ignore Mac OS Stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+## Ignore Sublime text stuff
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+# Windows shortcuts
+*.lnk
+*.bat
+*.cfg
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.ai
+_files/
+colors.png
+dasdfgfsr5r4ra.mp4
+Intro-StormofColorRunfixed.mp4
+
+
+.vscode/
+
+node-modules/
+_site/
+blog/drafts/
+
+img/test.png
+img/test2.png
+img/test3.png
+img/test4.png
+img/test5.png
+img/test6.png
+img/test7.png
+img/test8.png
+img/test9.png
+img/test10.png
+img/hero.png
+img/hero1.png
+img/hero3.png
+img/bg.png
+img/face.jpg

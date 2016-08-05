@@ -1,0 +1,69 @@
+// margin: top right bottom left
+    margin: 25px 50px 75px 100px;
+footer
+    background: $footer-bg
+    // position: absolute
+    position: relative
+    text-align: center
+    overflow: hidden
+    // right: 0
+    // bottom: 0
+    // left: 0
+    // padding: 1rem
+    bottom: -54em
+    width: 100%
+    +display(flex)
+    +flex-direction(column)
+    .lockup
+        +clearfix
+        +flex-direction(row)
+
+        padding: 15px 30px 24px
+        .logo
+            +flex-direction(column)
+            +justify-content(center)
+            // margin-top: 15px
+            svg
+                width: 175px
+                float: left
+                margin-left: 50px
+                path
+                    fill: $bg-color-light
+                    +transition($trans)
+                    &:hover
+                        fill: #ff6b57
+
+
+
+        .content-wrapper
+            +flex-direction(column)
+            .copyright
+                text-transform: uppercase
+                color: rgba(255, 255, 255, 0.85)
+                @extend %small-bold
+            a
+                display: inline-block
+                margin-right: 20px
+                +transition($trans)
+                color: rgba(255, 255, 255, 0.85)
+                @extend %small-bold
+            a:hover
+                color: $primary
+
+
+@media screen and (max-width: 640px)
+    footer
+        bottom: -45em
+        .lockup
+            .logo
+                svg
+                    float: none
+                    margin: 0 auto
+            .content-wrapper
+                float: none
+                margin: 0 auto
+                nav
+                    a
+                        margin-right: 5px
+                        font:
+                            size: 12px

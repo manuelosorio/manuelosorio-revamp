@@ -1,0 +1,22 @@
+<footer>
+    <div class="lockup">
+
+        <div>
+
+
+            <div class="logo">{% include icons/icon-logo.html %}</div>
+            <div class="content-wrapper">
+                <nav>
+                    {% for item in site.data.settings.menu %}
+                        <a href="{{ item.url }}">{{ item.name }}</a>
+                    {% endfor %}
+                        <a href="https://mkdesignz.spreadshirt.com" target="_blank">Store</a>
+                </nav>
+
+                <p class="copyright">© 2014-2016, Manuel Osorio All rights reserved.</p>
+
+            </div>
+        </div>
+
+    </div>
+</footer>

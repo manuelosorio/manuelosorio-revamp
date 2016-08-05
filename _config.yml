@@ -1,0 +1,38 @@
+#avatar: assets/img/face.jpg
+
+# Build settings
+
+
+paginate: 3
+paginate_path: "/blog/:num/"
+exclude: [node_modules, gulpfile.js]
+port: 80
+
+sass:
+  sass_dir: assets/css
+  style: :compressed
+
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet]
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  syntax_highlighter: rouge
+  enable_coderay: false
+
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         1
+    coderay_bold_every:        10
+    coderay_css:               style

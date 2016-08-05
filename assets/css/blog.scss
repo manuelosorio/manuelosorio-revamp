@@ -1,0 +1,58 @@
+---
+---
+
+
+
+
+// Our variables
+
+$base-font-family: 'Varela Round', 'Open-sans', sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: rgb(240, 240, 240);
+$bf-color-light: #ECECEC;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #939393;
+$grey-color-light: lighten($grey-color, 5%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+$primary: rgb(241, 94, 69);
+$primary-light: lighten($primary, 10%);
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "1-tools/bourbon/bourbon";
+@import "blog/syntax-highlighting";
+@import "blog/base";
+@import "blog/blog";
+@import "blog/posts";
+@import "blog/layout";
+@import "blog/mailchimp-sub";

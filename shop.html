@@ -1,0 +1,43 @@
+---
+permalink: shop/
+title: "Manuel Osorio | MKDesignz Shop"
+---
+<!DOCTYPE html>
+<!--
+
+
+This site was built with lots of ♥ and Sass.
+
+-->
+<html lang="en">
+   <head>
+    	{% include head.html %}
+        <script>
+          var host1 = "manuelosorio.me";
+          var host2 = "www.manuelosorio.me";
+          if ((host1 == window.location.host || host2 == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+        </script>
+	</head>
+    <body>
+
+            {% include nav-perm-pretty.html %}			
+			<div id="myShop"><a href="//shop.spreadshirt.com/mkdesignz">mkdesignz</a></div>
+			<script>
+				var spread_shop_config = {
+					shopName: 'mkdesignz',
+					locale: 'us_US',
+					prefix: '//shop.spreadshirt.com',
+					baseId: 'myShop'
+				};
+			</script>
+           	<script type="text/javascript" src="//shop.spreadshirt.com/shopfiles/shopclient/shopclient.nocache.js"></script>
+
+            {% include footer-perm-pretty.html %}
+
+        <script src="../assets/js/jquery-2.1.1.min.js"></script>
+        <script src="../assets/js/functions.js"></script>
+        <script src="/assets/js/toggleNav.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,48 @@
+.blog-header
+    height: 365px
+    background-color: $primary
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .title
+        font-family: "reis"
+        h1
+            font-size: 6.5em
+            color: #EfEfEf
+#button
+    width: 200px
+    text-align: center
+    margin: 15px auto
+    border-radius: 5px
+    border-color: $primary
+    border-style: solid
+    border-width: 2px
+    &:hover
+        background: $primary
+        color: #ECECEC !important
+
+
+.post-list
+    margin-top: 25px
+.post-underline
+    margin: 25px auto
+    display: block
+    border-bottom-radius: 5px
+    border-bottom-color: $primary
+    border-bottom-style: solid
+.pagination
+    font-size: 4em
+    color: $primary
+    text-align: center
+
+    a
+        color: $primary-light
+        -webkit-transition: 500ms ease-in-out
+        -moz-transition: 500ms ease-in-out
+        transition: 500ms ease-in-out
+        &:hover
+            color: $primary
+
+    .disabled
+        cursor: not-allowed

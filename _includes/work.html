@@ -1,0 +1,44 @@
+<section class="section-work" id="clicked">
+
+    <h3 id="work">Work</h3>
+
+    <div class="work-belt">
+
+
+        <!--
+                Content Tumbnails
+        -->
+        <div class="thumb-wrap">
+            <div class="thumb-container">
+                    {% for project in site.data.settings.projects %}
+                <a href="#clicked" class="thumb-unit" data-folder="{{ project.folder }}"  style="background-image: url(/assets/img/{{ project.folder }}/thumb.png); background-size: cover;">
+                    <div class="thumb-overlay">
+                        <strong>{{ project.name }}</strong>
+                    </div>
+                    {% endfor %}
+                </a>
+            </div>
+        </div>
+
+
+        <!--
+                  Content Full Size
+        -->
+        <div class="work-wrap">
+           <div class="work-container">
+            <div class="work-return"> {% include icons/icon-back.html %} </div>
+
+                <h4 class="project-title"></h4>
+
+               <div class="project-load"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</section>

@@ -1,0 +1,106 @@
+---
+title: "Manuel Osorio | NewYearCountDown"
+keywords: 'New year Countdown, Timer, January 1st, 2016'
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  	<title>New Year Count Down</title>-->
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/icons/favicon.ico" type="image/x-icon">
+    {% for head in site.data.settings.head %}
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="Keywords" content="{{ head.keywords}}, {{ page.keywords }}" />
+    <meta http-equiv="default-style">
+    <meta name="author" content="{{ head.name }}" />
+    <meta name="description" content="{{ head.description }}" />
+    {% endfor %}
+	<script>
+		var host1 = "manuelosorio.me";
+		var host2 = "www.manuelosorio.me";
+		if ((host1 == window.location.host || host2 == window.location.host) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
+	</script>
+
+</head>
+<body>
+		<input type="checkbox" name="menu" id="check-box" >
+	<div class="page-wrap">
+		<label class="menu" for="check-box">
+			<span class="bars"></span>
+			<span class="bars"></span>
+			<span class="bars"></span>
+		</label>
+		
+
+		<span id="contian">
+			<div class="clock">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns"><h1>Count Down to the New Year</h1></div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+							<div class="two columns"><div class="countdown"><span id="months"><p>00</p></span></div><div class="category">Months</div></div>
+							<div class="two columns"><div class="countdown"><span id="days"><p>00</p></span></div><div class="category">Days</div></div>
+							<div class="two columns"><div class="countdown"><span id="hours"><p>00</p></span></div><div class="category">Hours</div></div>
+							<div class="two columns"><div class="countdown"><span id="minutes"><p>00</p></span></div><div class="category">Minutes</div></div>
+							<div class="two columns"><div class="countdown"><span id="seconds"><p>00</p></span></div><div class="category">Seconds</div></div>
+						</div>
+					</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns finished hide">
+						<h1><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> <span>N</span><span>e</span><span>w</span> <span>Y</span><span>e</span><span>a</span><span>r</span><span>!</span></h1>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="twelve columns">© 2014-2016, <a href="https://manuelosroio.me">MANUEL OSORIO</a> ALL RIGHTS RESERVED.</div>
+					</div>
+				</div>
+			</footer>
+
+		</span>
+
+		<div class="side-bar">
+		{% for item in site.data.settings.menu %}
+			<ul><a href="/{{ item.url }}">{{ item.name }}</a></ul>
+		{% endfor %}
+			<ul><a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a></ul>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery-2.1.4.min.js"></script>
+	<script src="assets/js/functions.js"></script>
+	
+
+	<script>
+		countdown('1/1/2017  12:00:00 AM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
+			console.log('Finished!');
+		});
+	</script>
+
+<!--
+	<script>
+		countdown('12/31/2015  10:52:00 PM', ['months', 'days', 'hours', 'minutes', 'seconds'], function() {
+			console.log('Finished!');
+		});
+	</script>
+	
+-->
+	
+</body>
+</html>
+ 

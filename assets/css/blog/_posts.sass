@@ -1,0 +1,52 @@
+.post-content
+    p
+        img
+            max-width: 350px
+            margin: 0 auto
+            display: flex
+            @media screen and (max-width: 750px)
+                max-width: 100%
+
+.post-header
+    background-color: #f15e45
+    height: 300px
+    display: flex
+    flex-direction: column
+    text-align: center
+    justify-content: center
+    .post-title
+        color: #ECECEC
+        font-size: 5.5em
+        font-family: reis
+    .post-meta
+        color: #ECECEC
+        font-size: 1.1em
+
+.PageNavigation
+    font-size: 14px
+    display: block
+    width: auto
+    overflow: hidden
+
+    a
+        display: block
+        width: 50%
+        text-align: center
+        color: $primary-light
+        float: left
+        margin: 1em 0
+        font-size: 20px
+        transition: 500ms ease-in-out
+        -webkit-transition: 500ms ease-in-out
+        -moz-transition: 500ms ease-in-out
+        -o-transition: 500ms ease-in-out
+        &:hover
+            color: $primary
+
+        &.next
+            float: right
+            text-align: right
+
+@media screen and (max-width: 750px)
+    .post-header .post-title
+        font-size: 3.5em
