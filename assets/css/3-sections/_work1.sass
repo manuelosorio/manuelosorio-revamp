@@ -1,0 +1,110 @@
+.section-work
+	// background: $bg-color-light
+	overflow-x: hidden
+	position: relative
+	top: 200px
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition($trans)
+.thumb-wrap, .work-wrap
+	width: 50%
+	float: left
+.thumb-wrap
+	+display(flex)
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: center
+	overflow: hidden
+.image
+	cursor: pointer
+	margin: 20px
+	position: relative
+	transition: 200ms ease-in-out
+	height: 250px
+	width: 350px
+	box-shadow: 0px 2px 10px 3px rgba(#323232, .30)
+	transform: skewY(-3deg)
+	overflow: hidden
+	z-index: 1
+	img
+		transform: scale(1.2) skewY(3deg)
+		height: 250px
+		width: 350px
+		transition: 200ms ease-in-out
+	&:hover
+		transform: scale(1.1)
+		box-shadow: -6px 7px 13px 4px rgba(#323232,0.3)
+		img
+			// opacity: .8
+
+			// z-index: 100
+			transform: scale(1.2) skewY(0)
+			filter: blur(5px) brightness(75%)
+			// .info
+			// 	display: block
+	.info
+		+display(inline-flex)
+		transition: 200ms ease-in-out
+		transform: scale(0)
+		position: absolute
+
+		height: 250px
+		width: 350px
+
+		align-items: center
+		justify-content: center
+		text-align: center
+		z-index: 150
+		.group
+			svg
+				+size(50px)
+				fill: $primary-light
+			p
+				position: relative
+				// right: 40%
+				// text-align: center
+				color: $primary-light
+				font:
+					size: 20px
+					weight: bold
+	&:hover .info
+		transform: scale(1)
+.work-container
+	max-width: 600px
+	margin: 0px auto
+	position: relative
+	display: none
+	h4
+		color: $primary
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 24px
+		line-height: 1.2
+		margin: 0 0 20px
+	img
+		max-width: 100%
+		margin-bottom: 20px
+	.work-return svg
+		+size(40px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, -4px null null -60px)
+		+transition($trans)
+		path
+			fill: rgba(0,0,0,0.4)
+			&:hover
+				opacity: 1
+
+@media screen and (max-width: 760px)
+	.work-container
+		.work-return
+			svg
+				left: 0px
+				margin-left: 15%
+			h4
+				margin-left: 30%
+			p
+				margin: 0 15px 20px 15px
+@import 'images'

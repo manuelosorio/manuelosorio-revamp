@@ -35,19 +35,19 @@
   0%,
   80%,
   100% {
-    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+    box-shadow: 0 2.5em 0 -1.3em $primary-light;
   }
   40% {
-    box-shadow: 0 2.5em 0 0 #FFF;
+    box-shadow: 0 2.5em 0 0 $primary-light;
   }
 }
 @keyframes load7 {
   0%,
   80%,
   100% {
-    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+    box-shadow: 0 2.5em 0 -1.3em $primary-light;
   }
   40% {
-    box-shadow: 0 2.5em 0 0 #FFF;
+    box-shadow: 0 2.5em 0 0 $primary-light;
   }
 }

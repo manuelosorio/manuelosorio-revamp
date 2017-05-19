@@ -29,6 +29,8 @@ Options +FollowSymLinks
 
 RewriteEngine On
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 # https/http www -> https non-www
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
