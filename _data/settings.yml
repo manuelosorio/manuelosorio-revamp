@@ -17,15 +17,17 @@ email: hey@manuelosorio.me
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
-
-
-
-- {name: About, url: '', target: '_self'}
+- {name: About, url: "", target: _self}
 - {name: Work, url: 'work', target: '_self'}
 - {name: Contact, url: 'contact', target: '_self'}
 - {name: Blog, url: 'blog', target: '_self'}
 #- {name: Shop, url: 'shop'}
-
+navigation:
+- text: About
+  url: /index.html
+- text: Travel
+  title: Work
+  url: /travel.html
 
 #-------------------------------
 # SEO Section
