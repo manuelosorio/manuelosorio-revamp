@@ -11,20 +11,37 @@ footer
     // left: 0
     // padding-top: : 1em
     // bottom: -54em
+    height: 180px
     width: 100%
     +display(flex)
     +flex-direction(column)
+    &::before
+        content: ""
+        background: #EFEFEF
+        position: absolute
+        height: 200px
+        width: 100%
+        padding-bottom: 3em
+        z-index: 0
+        bottom: 8.8em
+        transform: skewY(-4deg)
+        overflow: hidden
     .lockup
         +clearfix
         +flex-direction(row)
-
+        position: relative
         padding: 15px 30px 24px
+        top: 7em
         .logo
+            position: relative
+            width: 100px
+            bottom: -1em
             +flex-direction(column)
             +justify-content(center)
             // margin-top: 15px
             svg
-                width: 175px
+                width: 100px
+                height: 33px
                 float: left
                 margin-left: 50px
                 path

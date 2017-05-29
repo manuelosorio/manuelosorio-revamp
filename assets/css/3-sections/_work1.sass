@@ -25,7 +25,7 @@
 	transition: 200ms ease-in-out
 	height: 250px
 	width: 350px
-	box-shadow: 0px 2px 10px 3px rgba(#323232, .30)
+	box-shadow: 0px 2px 10px 3px rgba(#323232, .3)
 	transform: skewY(-3deg)
 	overflow: hidden
 	z-index: 1
@@ -36,7 +36,7 @@
 		transition: 200ms ease-in-out
 	&:hover
 		transform: scale(1.1)
-		box-shadow: -6px 7px 13px 4px rgba(#323232,0.3)
+		box-shadow: -3px 2px 10px 3px rgba(#323232,0.4)
 		img
 			// opacity: .8
 
@@ -87,16 +87,28 @@
 	img
 		max-width: 100%
 		margin-bottom: 20px
-	.work-return svg
-		+size(40px)
+	.work-return
+		position: fixed
+		left: 25em
 		cursor: pointer
-		opacity: 0.5
-		+position(absolute, -4px null null -60px)
-		+transition($trans)
-		path
-			fill: rgba(0,0,0,0.4)
+		svg
+			+size(40px)
+			cursor: pointer
+			opacity: 0.5
+			+position(absolute, -4px null null -60px)
+			+transition($trans)
+			path
+				fill: rgba(0,0,0,0.4)
 			&:hover
 				opacity: 1
+		p
+			font:
+				size: 25px
+				weight: 600
+			color: rgba(0,0,0,0.4)
+			text-transform: capitalize
+			position: relative
+			right: 13px
 
 @media screen and (max-width: 760px)
 	.work-container
