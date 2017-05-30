@@ -69,18 +69,29 @@ footer
 
 
 @media screen and (max-width: 640px)
+    .container#work
+        &::after
+            height: 10px
     footer
-        bottom: -45em
+        height: 17.5em
+        // bottom: -45em
+        &::before
+            bottom: 13em
         .lockup
             .logo
+                bottom: 1em
                 svg
+
                     float: none
                     margin: 0 auto
             .content-wrapper
+                position: relative
+                // bottom: 3.3em
                 float: none
-                margin: 0 auto
+                margin: 1em auto
                 nav
                     a
+                        display: none
                         margin-right: 5px
                         font:
                             size: 12px
