@@ -24,28 +24,28 @@
   &::after
     content: ''
     display: block
-    background: $primary
+    background: rgba($primary, 1)
     height: 200px
-    width: 3000px
+    width: 100%
     position: absolute
     padding-bottom: 300px
     z-index: 0
     bottom: -56%
-    left: 50%
-    margin-left: -1500px
-    +transform(rotate(6deg))
+    // left: 50%
+    // margin-left: -1500px
+    +transform(skewY(4deg))
 
 
   h3
     @extend %small-bold
-    color: $primary
+    color: rgba($primary, 1)
     width: 90%
     margin: 0 auto
     text-align: center
     padding: 45px 0 25px 0
     font-family: Open Sans
     font-size: 1.5em
-    +transform(rotate(-5deg))
+    // +transform(rotate(-5deg))
   h3.no-rotate
     +transform(rotate(0))
 .fixed ~ #about
@@ -84,24 +84,24 @@
       display: block
       background: $bg-color-light
       height: 200px
-      width:  3000px
+      width:  100%
       position: absolute
       z-index: 0
       bottom: 2em
-      left: 50%
-      margin-left: -1500px
-      +transform(rotate(5deg))
+      left: 0
+      // margin-left: -1500px
+      // +transform(rotate(5deg))
   [class^="icon-"]
     +size(100px)
     border:
       radius: 50%
       width: 5px
       style: solid
-      color: $primary-light
+      color: rgba($primary-light, 1)
 
     align: center
     path
-      fill: $primary
+      fill: rgba($primary, 1)
     &.icon-pencil
       +order(1)
     &.icon-mouse
@@ -115,11 +115,11 @@
 #skills
   position: relative
   top: 48em
-  background: $primary
-  padding-bottom: 150px
+  background: rgba($primary, 1)
+  // padding-bottom: 150px
   h3
     text-align: center
-    color: $bg-color-light
+    color: rgba($bg-color-light, 1)
     position: relative
     top: -3em
     width: 90%

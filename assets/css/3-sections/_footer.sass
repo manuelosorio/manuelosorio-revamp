@@ -1,7 +1,7 @@
 // margin: top right bottom left
     margin: 25px 50px 75px 100px;
 footer
-    background: $footer-bg
+    background: rgba($footer-bg, 1)
     // position: absolute
     position: relative
     text-align: center
@@ -17,7 +17,7 @@ footer
     +flex-direction(column)
     &::before
         content: ""
-        background: #EFEFEF
+        background: rgba($bg-color-light, 1)
         position: absolute
         height: 200px
         width: 100%
@@ -45,10 +45,10 @@ footer
                 float: left
                 margin-left: 50px
                 path
-                    fill: $bg-color-light
+                    fill: rgba($bg-color-light, 1)
                     +transition($trans)
                     &:hover
-                        fill: #ff6b57
+                        fill: rgba($primary, 1)
 
 
 
@@ -56,17 +56,21 @@ footer
             +flex-direction(column)
             .copyright
                 text-transform: uppercase
-                color: rgba(255, 255, 255, 0.85)
+                color: rgba($bg-color-light, 0.85)
                 @extend %small-bold
             a
                 display: inline-block
                 margin-right: 20px
                 +transition($trans)
-                color: rgba(255, 255, 255, 0.85)
+                color: rgba($bg-color-light, 0.85)
                 @extend %small-bold
             a:hover
-                color: $primary
+                color: rgba($primary, 1)
 
+#about-page + footer
+    top: 33em
+    &::before
+        background: rgba($primary, 1)
 
 @media screen and (max-width: 640px)
     .container#work
