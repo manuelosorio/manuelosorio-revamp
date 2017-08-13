@@ -34,12 +34,12 @@ function smoothScroll(duration) {
 function fixedNav () {
         //Calculate the height of <nav>
         //Use outerHeight() instead of height() if have padding
-        var navHeight = $('.hero').outerHeight();
+        var navHeight = $('#hero').outerHeight();
 
         $(window).scroll(function () {
 
             //if scrolled down more than the header’s height
-        if ($(window).scrollTop() > navHeight - 150) {
+        if ($(window).scrollTop() > navHeight - 250) {
 
             // if yes, add “fixed” class to the <nav>
             // add padding top to the #content

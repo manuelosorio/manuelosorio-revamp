@@ -7,6 +7,7 @@ categories:
 keywords: "Welcome, blog"
 permalink: blog/posts/2015/august/:title/
 preview: Hello Guys Welcome to my blog, I'm excited your here. I like to tell you a little bit about myself. My name is Manuel Osorio. I'm a graphic/web designer...
+
 ---
 
 

@@ -5,12 +5,11 @@ keywords: "Blog"
 url-name: blog
 ---
 
-
-<div class="blog-header">
-    <div class="title">
-        <h1>Manuel Osorio</h1>
-        <h1>Blog</h1>
-    </div>
+<div class="blog-header" id="hero">
+  <div class="title">
+      <h1>Manuel Osorio</h1>
+      <h1>Blog</h1>
+  </div>
 </div>
 <div class="wrapper">
 
@@ -19,8 +18,11 @@ url-name: blog
   <ul class="post-list">
 
     {% for post in paginator.posts %}
-      <li>
-
+      <li class="post">
+        <div class="left">
+          <div class="post-img" stlye="background-image: url({{img-url}})">
+          </div>
+        </div>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="color:#f15e45;">{{ post.title }}</a>
         </h2>

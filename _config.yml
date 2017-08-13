@@ -6,7 +6,8 @@
 paginate: 3
 paginate_path: "/blog/:num/"
 # include: ['.htaccess']
-exclude: [node_modules, gulpfile.js]
+ErrorDocument: 404 /404.html
+exclude: [node_modules, gulpfile.js, package.json, Gemfile, Gemfile.lock, test.cmd]
 port: 80
 
 sass:
@@ -14,7 +15,7 @@ sass:
   style: :compressed
 
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet]
+plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet]
 
 redcarpet:
   extensions: []
@@ -26,14 +27,15 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   input: GFM
-  syntax_highlighter: rouge
-  enable_coderay: false
+  enable_coderay: true
+  syntax_highlighter: coderay
+  syntax_highlighter_opts: {}
 
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         1
-    coderay_bold_every:        10
-    coderay_css:               style
+  # coderay:
+  #   coderay_wrap:              div
+  #   coderay_line_numbers:      inline
+  #   coderay_line_number_start: 1
+  #   coderay_tab_width:         1
+  #   coderay_bold_every:        10
+  #   coderay_css:               style

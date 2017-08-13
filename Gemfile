@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '>= 2.5.1' if Gem.win_platform?
+gem 'jekyll', '>= 2.5.3' if Gem.win_platform?
 gem 'jekyll-watch'
 gem 'jekyll-paginate'
 gem 'coderay'

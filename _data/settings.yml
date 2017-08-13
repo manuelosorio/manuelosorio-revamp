@@ -22,12 +22,13 @@ menu:
 - {name: Contact, url: 'contact', target: '_self'}
 - {name: Blog, url: 'blog', target: '_self'}
 #- {name: Shop, url: 'shop'}
-navigation:
-- text: About
-  url: /index.html
-- text: Travel
-  title: Work
-  url: /travel.html
+
+# navigation:
+# - text: About
+#   url: /index.html
+# - text: Travel
+#   title: Work
+#   url: /travel.html
 
 #-------------------------------
 # SEO Section

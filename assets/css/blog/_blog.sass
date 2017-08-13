@@ -1,15 +1,39 @@
 .blog-header
-    height: 365px
-    background-color: $primary
-    text-align: center
+    height: 150px
+    width: 100%
+    padding-top: 250px
+    position: absolute
+    top: 0
+    left: 0
+    // background-color: $primary
+    // text-align: center
     display: flex
-    flex-direction: column
     justify-content: center
+    background:
+        color: rgba(241,94,69,0.45)
+        image: url("/assets/img/hero.png")
+        repeat: repeat
+        size: 100%
+        position: top center
+        blend-mode: soft-light
+    &::after
+        content: ''
+        background: $bg-color-light
+        position: absolute
+        height: 200px
+        width: 100%
+        padding: 3em
+        z-index: 0
+        bottom: -50%
+        transform: skewY(-4deg)
+        overflow: hidden
     .title
-        font-family: "reis"
+        font-family: "reis", sans-serif
+        position: relative
+        top: -10em
         h1
-            font-size: 6.5em
-            color: #EfEfEf
+            color: $bg-color-light
+
 #button
     width: 200px
     text-align: center
@@ -22,7 +46,11 @@
         background: $primary
         color: #ECECEC !important
 
-
+.wrapper
+    overflow-x: hidden
+    position: relative
+    top: 20em
+    margin-bottom: 20em
 .post-list
     margin-top: 25px
 .post-underline
