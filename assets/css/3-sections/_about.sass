@@ -1,6 +1,4 @@
-// @media (min-width:700px)
-  .fixed ~ #about
-  top: 755px
+
 
 #about
   // +transition($trans)
@@ -11,6 +9,7 @@
   overflow: hidden
   position: relative
   top: 715px
+  z-index: 3
   // &::before
   //   content: ""
   //   display: block
@@ -45,11 +44,8 @@
     padding: 45px 0 25px 0
     font-family: Open Sans
     font-size: 1.5em
-    // +transform(rotate(-5deg))
-  h3.no-rotate
-    +transform(rotate(0))
 .fixed ~ #about
-  top: 755px
+  top: 54em
 .flex-wrap
   +display(flex)
   +flex-direction(row)
@@ -67,30 +63,6 @@
     background-size: cover
     background-image: url(../img/#{$avatar-path})
     // +order(3)
-    &::before
-      content: ""
-      display: block
-      width: 100%
-      overflow: hidden
-      z-index: 0
-      position: absolute
-      padding-bottom: 80px
-      top: .5em
-      left: 0
-      background: $bg-color-light
-      transform: rotate(-5deg)
-    &::after
-      content: ""
-      display: block
-      background: $bg-color-light
-      height: 200px
-      width:  100%
-      position: absolute
-      z-index: 0
-      bottom: 2em
-      left: 0
-      // margin-left: -1500px
-      // +transform(rotate(5deg))
   [class^="icon-"]
     +size(100px)
     border:
@@ -150,6 +122,23 @@
   font-weight: 300
   color: #999
   z-index: 1
+@media all and (max-width: 540px)
+  #about-page + footer
+    top: 31em
+  .fixed ~ #about
+    top: 53em
+  #about::after
+    bottom: -30%
+@media all and (max-width: 480px)
+  #about-page + footer
+    top: 16em
+  .fixed ~ #about
+    top: 36.5em
+  #about
+    top: 35em
+    h3
+      position: relative
+
 @media all and (max-width: 370px)
   .profile-wrap .face-img
     +size(250px)

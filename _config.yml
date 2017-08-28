@@ -12,7 +12,7 @@ port: 80
 
 sass:
   sass_dir: assets/css
-  style: :compressed
+  style: :compacted
 
 markdown: kramdown
 plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet]

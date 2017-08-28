@@ -1,3 +1,11 @@
+#skills
+  h3
+    text-align: center
+    color: rgba($bg-color-light, 1)
+    position: relative
+    width: 90%
+    z-index: 3
+    top: -2em
 .skills-wrap
   +display(flex)
   flex-direction: row
@@ -7,13 +15,15 @@
   +clearfix
   flex-wrap: wrap
   position: relative
-  top: -55px
+  top: -50px
+  z-index: 3
 
   .skills-unit
     flex-direction: row
     width: 50%
     float: left
     margin-bottom: 15px
+
 
     .skills-icons
       font-size: 15px
@@ -54,12 +64,12 @@
           font-size: 17px
           margin: 0 auto
           // text-align: center
-
+@media all and (max-width: 650px)
+  #skills h3
+    top: -3.4em
+  .skills-wrap
+    top: -6em
 @media all and (max-width: 540px)
-  .fixed ~ #about
-    top: 54em
-  #about::after
-    bottom: -40%
   .skills-wrap
     width: 100%
     top: -7.4em
@@ -68,35 +78,24 @@
 
       .skills-icons span
         width: 11%
-  .fixed ~ #skills
-    top: 51.5em
-  #skills
-    top: 48.5em
-    h3
-      top: -4.4em
 
-  .blurp
-    margin: 0 18px
-    font-size: 18px
+
+
+  .fixed ~ #skills
+    top: 47.5em
+  #skills
+    top: 38.5em
+    h3
+      top: -1.4em
+  .skills-wrap
+    top: -1.4em
+
 %skill-color
   background: $bg-color-light
 @media all and (max-width: 480px)
-  .fixed ~ #about
-    top: 36.5em
-  #about
-    top: 35em
+  .fixed ~ #skills, #skills
+    top: 34.5em
     h3
-      position: relative
-      z-index: 1
-  .fixed ~ #skills
-    top: 32.5em
-    h3
-      top: -3.4em
-  #skills
-    top: 32.5em
-    h3
-
-      top: -3.4em
 
   .profile-wrap
     z-index: 0
@@ -107,34 +106,21 @@
 
 #skills
   position: relative
-  top: 48em
+  top: 51em
   background: rgba($primary, 1)
-  // padding-bottom: 150px
+  padding-bottom: 0
   .fixed ~ #skills
     top: 52em
   h3
-    text-align: center
-    color: rgba($bg-color-light, 1)
-    position: relative
-    top: -3em
-    width: 90%
 
-@media all and (max-width: 650px)
-  .fixed ~ #skills
-    top: 46em
-  #skills
-    top: 43em
+
+
 @media all and (max-width: 370px)
-  .profile-wrap .face-img
-    +size(250px)
-    &::before
-      top: 5.5em
-      padding-bottom: 40px
+
   .fixed ~ #skills
-    // top: 34.5em
     h3
       top: -3.4em
+  .skills-wrap
+    top: -4.4em
   #skills
-    // top: 34.5em
     h3
-      top: -3.4em
