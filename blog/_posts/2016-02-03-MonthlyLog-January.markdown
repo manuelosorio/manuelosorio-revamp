@@ -13,7 +13,7 @@ preview: "On January I listed my goals for 2016. To ensure that I am working on 
 
 1. Update my website/portfolio
 	* Updated the content on my work page
-	* Started sketches to plan the redisgn of the website
+	* Started sketches to plan the redesign of the website
 2. Start a new YouTube channel
 	* Branding it (Avatar, intro title and outro title)
 	* Have recorded 2 and edited 1 design video.

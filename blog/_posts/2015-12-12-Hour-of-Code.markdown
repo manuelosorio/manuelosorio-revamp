@@ -3,7 +3,7 @@ layout: post
 title:  "Hour of Code"
 date:   2015-12-12 11:59pm
 author: Manuel Osorio
-keywords: "Hour of Code, Devolpment"
+keywords: "Hour of Code, Development"
 categories: Web Development
 permalink: blog/posts/2015/december/:title/
 preview: "We live in a society today, where code is a big part of our lives. The device your using to read this blog is made with code..."
@@ -13,7 +13,7 @@ preview: "We live in a society today, where code is a big part of our lives. The
 
 <img src="../../../../../assets/img/blog/hourofcode/hourofcode.png" alt="#HourOfCode" title="#HourOfCode" style="max-width: 100%;">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have always been interested in learning to code but never have known where to start, you should consider try the hour of code. The hour of code is a great starting point for anyone interested in learing to code. Through <a target="_blank" href="https://code.org/">code.org</a>, you can learn some of the basics of code via click and drag functions or if you want you can also use simple JavaScript.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have always been interested in learning to code but never have known where to start, you should consider try the hour of code. The hour of code is a great starting point for anyone interested in learning to code. Through <a target="_blank" href="https://code.org/">code.org</a>, you can learn some of the basics of code via click and drag functions or if you want you can also use simple JavaScript.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using <a href="https://code.org/">code.org</a> is also a fun way to learn the basics of computer science. You can learn some basic JavaScript with Star Wars. When I participated in the hour of code I did the Star Wars one and although, I found it easy it was really fun. Coding shouldn't be boring, developers find coding fun, which is why it's a good thing that <a target="_blank" href="https://code.org/">code.org</a> keeps the activities in their site fun.
 

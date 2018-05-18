@@ -1,33 +1,36 @@
 <section id="featured-services-wrap">
   <h3>Services</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac faucibus ante, eu luctus nulla.</p>
+  <p>
+    My <strong>Brand Identity Design</strong> services include:
+    <ul>
+      <li>Logo</li>
+      <li>Business Card</li>
+      <li>Letter Head</li>
+      <li>Envelopes</li>
+    </ul>
+    My <strong>Website Development</strong> services include Front-End Single or multi-page websites.
+  </p>
   <!--
             Hidden Inputs for Pure CSS input styling
   -->
-  <form class="" action="index.html" method="post">
-    <input type="radio" name="service" id="logo">
-    <input type="radio" name="service" id="web">
-    <input type="radio" name="service" id="both">
-  </form>
   <div class="services row">
-    <label class="col col-4 service" for="logo">
+    <label class="col col-6 service" for="brandID">
       <div>
-        <img src="http://via.placeholder.com/150x150" alt="Lorem Impsum">
-        <p>Lorem Impsum</p>
+        <img src="assets/img/BrandId.png" alt="Brand Identity, Manuel Osorio" title="Brand Identity, Manuel Osorio">
       </div>
+      <p>Brand Identity Design</p>
     </label>
 
-    <label class="col col-4 service" for="web">
-      <img src="http://via.placeholder.com/150x150" alt="Lorem Impsum">
-      <p>Lorem Impsum</p>
+    <label class="col col-6 service" for="web">
+      <div>
+        <img src="assets/img/WebDev.png" alt="Website Development, Manuel Osorio" title="Website Development, Manuel Osorio">
+      </div>
+      <p>Website Development</p>
     </label>
-
-    <label class="col col-4 service" for="both">
-      <img src="http://via.placeholder.com/150x150" alt="Lorem Impsum">
-      <p>Lorem Impsum</p>
-    </label>
-
-
   </div>
+  <form class="" action="index.html" method="post">
+    <input type="checkbox" name="service" id="brandID">
+    <input type="checkbox" name="service" id="web">
+  </form>
 
 </section>

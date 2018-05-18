@@ -4,7 +4,7 @@ title:  "Project I am Currently Working on"
 date:   2016-7-13 12:44am
 author: Manuel Osorio
 categories: "Thoughts"
-keywords: "Css framework, html5, video"
+keywords: "CSS framework, html5, video"
 permalink: blog/posts/2016/july/:title/
 preview: I haven't posted anything for several months now. The reason for that is because I have been highly motivated to write. That is no excuse but...
 ---

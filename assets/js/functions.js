@@ -35,7 +35,7 @@ function fixedNav () {
         //Calculate the height of <nav>
         //Use outerHeight() instead of height() if have padding
         var navHeight = $('.hero').outerHeight();
-        var navHeightPage = $('#hero').outerHeight();
+        var navHeightPage = $('.hero').outerHeight();
 
         $(window).scroll(function () {
 

@@ -15,7 +15,7 @@ sass:
   style: :compacted
 
 markdown: kramdown
-plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet]
+plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet, jekyll-tidy]
 
 redcarpet:
   extensions: []
@@ -39,3 +39,6 @@ kramdown:
   #   coderay_tab_width:         1
   #   coderay_bold_every:        10
   #   coderay_css:               style
+jekyll_tidy:
+  #exclude: [index.html]
+  compress_html: false

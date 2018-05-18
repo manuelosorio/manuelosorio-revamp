@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Who am I"
+date:   2016-8-3
+author: Manuel Osorio
+categories: "Thoughts"
+keywords: "I am, Who am I"
+permalink: blog/posts/2016/august/:title/
+preview: Who I am? That is the question I often ponder upon. The easy answer to that question is, "I am Manuel Osorio". The problem with that answer is...
+readtime: '1'
+---
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I often struggle to answer the question of who I am. When I am asked reply, "I am Manuel Osorio-", *Awkward Silence*. -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who I am? That is the question I often ponder upon. The easy answer to that question is, "I am Manuel Osorio". The problem with that answer is that is just my name. It doesn't say anything about who I really am.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So who am I? I am a creator, always trying to find a way to make new content. I am a problem solver, always trying to come up with solutions to new problems. I am a thinker, mind racing with thoughts on whatever I am focusing on. I am a student, always eager to learn new things. I am a teacher, always willing to share my knowledge to other who might not know what I do. I am a friend, reliable and can be trusted. I am a Graphic Designer and I solve problems for others by creating designs, while learning new things along the way. I am a Front-end Developer and I use my Graphic Design skills to make to determine how I how a websites visual design ends up.
+
+Have a great day, <br />
+&nbsp;&nbsp;&nbsp;Manuel Osorio
+
+***Quick Update:** I am still working on the redesign and what I'm currently adding is still not near complete. The last thing I changed was the header image which is now a icon pattern.*
