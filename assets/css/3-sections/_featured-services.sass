@@ -1,37 +1,58 @@
 #featured-services-wrap
   position: relative
-  top: 55em
-  background-color: rgba($bg-color-light, 1)
+  top: 45em
+  background-color: rgba($primary, 1)
   z-index: 0
   padding:
     top: 25px
     bottom: 200px
+  &> *
+    // position: relative
   h3
-    color: $primary
+    color: $bg-color-light
     text-align: center
+    width: 90%
+    margin: 0 auto
+    text-align: center
+    padding: 45px 0 25px 0
+    font-family: $font
+    font-size: 1.5em
   &::before
     content: ""
-    background: rgba($primary, 1)
+    background: rgba($bg-color-light, 1)
     position: absolute
     height: 200px
     width: 100%
     padding-bottom: 3em
-    top: -16em
-    transform: skewY(-4deg)
+    top: -13em
+    transform: skewY(4deg)
     overflow: hidden
 .services
   margin: 15px
   .service
     display: flex
-    background-color: rgba($primary, 1)
+    background-color: rgba($primary-light, 1)
     justify-content: center
     padding: 15px
     position: relative
     div
+      display: flex
       justify-content: center
+      flex-direction: column
       position: relative
       margin: 0 auto
       z-index: 0
+      width: 75%
+      img
+        fill: $primary
+        height: 150px
+        svg
+          fill: $primary
+      p
+        text-align: center
+        margin: 15px 0
+        font-size: 1.5em
+        color: $bg-color-light
     .custom-checkbox
       +size(25px)
       background-color: $bg-color-light
@@ -40,7 +61,7 @@
         content: "\ea10"
         font-family: "icomoon"
         display: block
-        background-color: $primary-light
+        background-color: $primary
         border-radius: 50%
         +size(20px)
         position: relative

@@ -20,21 +20,6 @@
   //   padding-bottom: 300px
   //   top: 0
   //   left: 0
-  &::after
-    content: ''
-    display: block
-    background: rgba($primary, 1)
-    height: 200px
-    width: 100%
-    position: absolute
-    padding-bottom: 300px
-    z-index: 0
-    bottom: -56%
-    // left: 50%
-    // margin-left: -1500px
-    +transform(skewY(4deg))
-
-
   h3
     @extend %small-bold
     color: rgba($primary, 1)
@@ -83,8 +68,6 @@
     &.icon-brackets
       +order(5)
 @media all and (max-width: 1106px)
-  #about::after
-    bottom: -40%
   .profile-wrap .face-img::before
     top: 2.5em
 @media all and (max-width: 650px)
@@ -102,14 +85,10 @@
         repeat: no-repeat
       margin: 0 auto 30px
 
-      // &::before
-      // &::after
 
   [class^="icon-"]
     margin: 10px 9%
-  #about
-    &::after
-      bottom: -32%
+
 
 
 
@@ -127,8 +106,6 @@
     top: 31em
   .fixed ~ #about
     top: 53em
-  #about::after
-    bottom: -30%
 @media all and (max-width: 480px)
   #about-page + footer
     top: 16em
