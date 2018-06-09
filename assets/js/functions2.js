@@ -56,7 +56,7 @@ function fixedNav() {
 }
 
 function workBelt() {
-    $('.thumb-unit').click(function() {
+    $('.image').click(function() {
         $('.work-belt').css('left', '-100%');
         $('.work-container').show(800);
     });
@@ -70,7 +70,7 @@ function workLoad() {
     $.ajaxSetup({
         cache: true
     });
-    $('.thumb-unit').click(function() {
+    $('.image').click(function() {
         var $this = $(this),
             newTitle = $this.find('strong').text(),
             newfolder = $this.data('folder'),

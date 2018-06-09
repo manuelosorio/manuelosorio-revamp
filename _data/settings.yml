@@ -65,7 +65,10 @@ skills:
 
 - {name: Visualization, value: '9'}
 
-
+services:
+- {ID: brandID, title: Brand Identity Design}
+- {ID: logo, title: Logo Design}
+- {ID: webDev, title: Website Development}
 
 #--------------------------------------------
 

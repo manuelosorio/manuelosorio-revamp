@@ -14,33 +14,24 @@
             Hidden Inputs for Pure CSS input styling
   -->
   <form class="" action="index.html" method="post">
-    <div class="services row">
-    <label class="col col-4 service" for="brandID">
-      <input type="checkbox" name="service" id="brandID">
-      <span class="custom-checkbox"></span>
-      <div>
-        <img src="assets/img/services/BrandID.svg" alt="Brand Identity, Manuel Osorio" title="Brand Identity, Manuel Osorio">
-        <p>Brand Identity Design</p>
+      <div class="services row">
+      {% for services in site.data.settings.services %}
+      <label class="col col-4 service" for="{{ services.ID}}">
+        <input type="checkbox" name="service" id="{{ services.ID }}">
+        <span class="custom-checkbox"></span>
+        <div>
+          <img src="assets/img/services/{{ services.ID}}.svg" alt="{{ services.title }}, Manuel Osorio" title="{{services.title}}, Manuel Osorio">
+          <p>{{ services.title }}</p>
+        </div>
+      </label>
+    {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="" class="btn teal large outline round">Learn More</a>
       </div>
-    </label>
-
-    <label class="col col-4 service" for="logo">
-      <input type="checkbox" name="service" id="logo">
-      <span class="custom-checkbox"></span>
-      <div>
-        <img src="assets/img/services/logo.svg" alt="Website Development, Manuel Osorio" title="Website Development, Manuel Osorio">
-        <p>Logo Design</p>
-      </div>
-    </label>
-    <label class="col col-4 service" for="web">
-      <input type="checkbox" name="service" id="web">
-      <span class="custom-checkbox"></span>
-      <div>
-        <img src="assets/img/services/webDev.svg" alt="Website Development, Manuel Osorio" title="Website Development, Manuel Osorio">
-        <p>Website Development</p>
-      </div>
-    </label>
-  </div>
+      <div class="col col-6"></div>
+    </div>
   </form>
 
 </section>

@@ -18,21 +18,28 @@ I do web design, icons, logos.
 -->
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-          <meta name="robots" content="index, follow" />
-        {% for head in site.data.settings.head %}
+      <meta charset="utf-8">
+      <meta name="robots" content="index, follow" />
+      {% for head in site.data.settings.head %}
         <title>{{ head.title }}</title>
-         <meta property="og:title" content="{{ head.title }}" />
-          <meta name="Keywords" content="{{ head.keywords }}" />
-            <meta name="author" content="{{ head.name }}" />
-            <meta name="description" content="{{ head.description }}" />
-            <meta name="og:description" content="{{ head.description }}" />
-            <meta property="og:image" content="/assets/img/face.png" />
-        {% endfor %}
-        <link rel="stylesheet" href="assets/css/all2.css"/>
-        <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
-        <meta  name="viewport" content="width=device-width"/>
+        <meta property="og:title" content="{{ head.title }}" />
+        <meta name="Keywords" content="{{ head.keywords }}" />
+        <meta name="author" content="{{ head.name }}" />
+        <meta name="description" content="{{ head.description }}" />
+        <meta name="og:description" content="{{ head.description }}" />
+        <meta property="og:image" content="/assets/img/face.png" />
+      {% endfor %}
+      <link rel="stylesheet" href="assets/css/all2.css"/>
+      <link rel="stylesheet" href="https://manuelosorio.me/project-genesis/assets/css/project-genesis.min.css"/>
+
+      <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
+      <link rel="icon" sizes="192x192" href="assets/img/icons/favicon-192.png">
+      <link rel="icon" sizes="144x144" href="assets/img/icons/favicon-144.png">
+      <link rel="icon" sizes="96x96" href="assets/img/icons/favicon-96.png">
+      <link rel="icon" sizes="48x48" href="assets/img/icons/favicon-48.png">
+
+      <meta  name="viewport" content="width=device-width"/>
     </head>
     <body>
 
