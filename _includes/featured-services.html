@@ -13,25 +13,57 @@
   <!--
             Hidden Inputs for Pure CSS input styling
   -->
-  <form class="" action="index.html" method="post">
-      <div class="services row">
+
+  {% for head in site.data.settings.head %}
+    <form id="contactform" method="POST">
       {% for services in site.data.settings.services %}
-      <label class="col col-4 service" for="{{ services.ID}}">
-        <input type="checkbox" name="service" id="{{ services.ID }}">
-        <span class="custom-checkbox"></span>
-        <div>
-          <img src="assets/img/services/{{ services.ID}}.svg" alt="{{ services.title }}, Manuel Osorio" title="{{services.title}}, Manuel Osorio">
-          <p>{{ services.title }}</p>
+        <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
+        {% endfor %}
+        <div class="services row">
+          {% for services in site.data.settings.services %}
+          <label class="col col-4 service" for="{{ services.ID}}">
+            <span class="services custom-radio" service="{{ services.ID }}"></span>
+            <div>
+              <img src="assets/img/services/{{ services.ID}}.svg" alt="{{ services.title }}, Manuel Osorio" title="{{services.title}}, Manuel Osorio">
+              <p>{{ services.title }}</p>
+            </div>
+          </label>
+          {% endfor %}
         </div>
-      </label>
-    {% endfor %}
-    </div>
-    <div class="row">
-      <div class="col">
-        <a href="" class="btn teal large outline round">Learn More</a>
+      <!-- <div class="row">
+        <div class="col">
+          <a href="" class="btn large outline round">Learn More</a>
+        </div>
+        <div class="col col-6"></div>
+      </div> -->
+      <div id="modal">
+        <input class="name" required="required" type="text" name="name" placeholder="First Name">
+        <input class="name" type="text" name="name" placeholder="Last Name">
+
+        <input type="email" name="_replyto" required="required" placeholder="Your email">
+
+        <input type="hidden" name="_subject" value="Website codfdntact" />
+        <div class="services row">
+          {% for services in site.data.settings.services %}
+          <label class="service" for="{{services.ID}}">
+
+
+            <span class="custom-radio" service="{{ services.ID }}"></span>
+            <p>{{services.title}}</p>
+          </label>
+          {% endfor %}
       </div>
-      <div class="col col-6"></div>
-    </div>
-  </form>
+      </div>
+
+      <textarea name="message" required="required" placeholder="Tell me about your project..."></textarea>
+      <input type="text" name="_gotcha" style="display:none" />-
+      <input type="hidden" name="_next" value="/contact" />
+      <input type="submit" value="Send">
+    </form>
+    <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + '{{ head.email }}');
+    </script>
+  {% endfor %}
 
 </section>
