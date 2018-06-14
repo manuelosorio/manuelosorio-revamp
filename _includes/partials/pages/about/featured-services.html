@@ -1,5 +1,5 @@
 <section id="featured-services-wrap">
-  <h3>SERVICES</h3>
+  <h3 id="services-title">SERVICES</h3>
   <!-- <p>
     My <strong>Brand Identity Design</strong> services include:
     <ul>
@@ -19,7 +19,7 @@
       {% for services in site.data.settings.services %}
         <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
         {% endfor %}
-        <div class="services row">
+        <div class="services row" id="services">
           {% for services in site.data.settings.services %}
           <label class="col col-4 service" for="{{ services.ID}}">
             <span class="services custom-radio" service="{{ services.ID }}"></span>

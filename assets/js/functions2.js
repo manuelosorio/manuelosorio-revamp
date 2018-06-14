@@ -5,6 +5,7 @@ $(function() {
     workBelt();
     workLoad();
     clientStuff();
+    modal();
     $("header h1").fitText(1, {
         minFontSize: '20px',
         maxFontSize: '72px'
@@ -53,6 +54,25 @@ function fixedNav() {
 
         }
        });
+}
+
+function modal() {
+  var modal =document.querySelector('#modal');
+  var nav = document.querySelector(".nav");
+  var hero = document.querySelector("#about");
+  var about = document.querySelector("#hero");
+  var title= document.querySelector("#services-title");
+  var services = document.querySelector("#services");
+  var footer = document.querySelector("footer");
+
+  if (modal.classList.contains("active")){
+    nav.classList.add("blur");
+    hero.classList.add("blur");
+    about.classList.add("blur");
+    title.classList.add("blur");
+    services.classList.add("blur");
+    footer.classList.add("blur");
+  }
 }
 
 function workBelt() {
