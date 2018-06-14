@@ -95,3 +95,6 @@ img/hero1.png
 img/hero3.png
 img/bg.png
 img/face.jpg
+
+.jekyll-metadata
+package-lock.json

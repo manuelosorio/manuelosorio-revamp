@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-  		{% include head-blog.html %}
+  		{% include partials/meta/head-blog.html %}
 		<link rel="stylesheet" href="https://s3.amazonaws.com/project-genesis/project-genesis.min.css">
 
 	</head>
   <body>
    <div class="container">
-    {% include nav-perm-pretty.html %}
+    {% include partials/header/nav-perm-pretty.html %}
 
 
         <div class="page-content">
-
-
             {{ content }}
         </div>
     	</div>
 
-    {% include footer-perm-pretty.html %}
+    {% include partials/footer/footer-perm-pretty.html %}
 
   </body>
 

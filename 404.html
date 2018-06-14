@@ -12,14 +12,14 @@ This site was built with lots of ♥ and Sass.
 -->
 <html lang="en">
 	<head>
-		{% include head.html %}
+		{% include partials/meta/head.html %}
 	</head>
     <body>
         <div class="container">
-            {% include 404-header.html %}
-						{% include 404-body.html %}
+            {% include partials/errors/404/404-header.html %}
+						{% include partials/errors/404/404-body.html %}
         </div>
-        {% include 404-footer.html %}
+        {% include partials/errors/404/404-footer.html %}
         <script src="/assets\js\jquery-2.1.1.min.js"></script>
         <script src="/assets/js/jquery.fitvids.js"></script>
         <script src="/assets/js/functions.js"></script>
