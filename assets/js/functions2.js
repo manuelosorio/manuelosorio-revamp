@@ -57,8 +57,9 @@ function fixedNav() {
 }
 
 function modal() {
-  var modal =document.getElementById('modal');
+  var modal =document.querySelector('#modal');
   var button =document.querySelector('#openmodal');
+  var close = document.querySelector('#close');
   var nav = document.querySelector(".nav");
   var hero = document.querySelector("#about");
   var about = document.querySelector("#hero");
@@ -67,6 +68,7 @@ function modal() {
   var featServices = document.querySelector("#featured-services-wrap");
   var footer = document.querySelector("footer");
   button.addEventListener("click", openModal);
+  close.addEventListener("click", closeModal);
   function openModal() {
     featServices.classList.add("zindex");
     if (featServices.classList.contains("zindex")) {
@@ -80,6 +82,16 @@ function modal() {
       services.classList.add("blur");
       footer.classList.add("blur");
     }
+  }
+  function closeModal() {
+    featServices.classList.remove("zindex");
+    modal.classList.remove("active");
+    nav.classList.remove("blur");
+    hero.classList.remove("blur");
+    about.classList.remove("blur");
+    title.classList.remove("blur");
+    services.classList.remove("blur");
+    footer.classList.remove("blur");
   }
 }
 

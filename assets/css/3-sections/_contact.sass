@@ -108,3 +108,51 @@
   overflow-y: hidden
 .zindex
   z-index: 10 !important
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: x-large
+
+  background: transparent
+  position: relative
+  margin: 0 auto
+  border-color: rgba($bg-color-light, 1)
+  border-width: 2px
+  border-style: solid
+  // border-radius: 5px
+  transform: skewX(-15deg)
+  cursor: pointer
+  color: rgba($bg-color-light, 1)
+  +transition(250ms ease-in-out)
+  &:hover
+    background: rgba($bg-color-light, 1)
+    color: $primary
+#close
+  border:
+    color: $primary-light
+    style: solid
+    radius: 50%
+    width: 2px
+  +size(16px)
+  padding: 5px
+  position: relative
+  margin: 15px
+  left: 5px
+  top: 5px
+  +transition(250ms ease-in-out)
+  cursor: pointer
+  &::before
+    content: "X"
+    font-size: 18px
+    font-family: "bio-sans", sans-serif
+    color: $primary-light
+    position: relative
+    top: -8px
+    left: 2px
+    font-weight: bold
+  &:hover
+    border-color: $primary
+    background: $primary
+    &::before
+      color: $bg-color-light
