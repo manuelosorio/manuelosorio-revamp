@@ -1,163 +1,163 @@
 .row {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  margin: 0 2%;
-  padding: 0.16667% 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 2%;
+    padding: 0.16667% 0
 }
 
 .row .col {
-  float: left;
-  flex-wrap: nowrap;
+    float: left;
+    flex-wrap: nowrap
 }
 
-.row .col + .col {
-  margin-left: 2%;
+.row .col+.col {
+    margin-left: 2%
 }
 
 .col-1 {
-  width: 6.5%;
+    width: 6.5%
 }
 
 .col-2 {
-  width: 15%;
+    width: 15%
 }
 
 .col-3 {
-  width: 23.5%;
+    width: 23.5%
 }
 
 .col-4 {
-  width: 32%;
+    width: 32%
 }
 
 .col-5 {
-  width: 40.5%;
+    width: 40.5%
 }
 
 .col-6 {
-  width: 49%;
+    width: 49%
 }
 
 .col-7 {
-  width: 57.5%;
+    width: 57.5%
 }
 
 .col-8 {
-  width: 66%;
+    width: 66%
 }
 
 .col-9 {
-  width: 74.5%;
+    width: 74.5%
 }
 
 .col-10 {
-  width: 83%;
+    width: 83%
 }
 
 .col-11 {
-  width: 91.5%;
+    width: 91.5%
 }
 
 .col-12 {
-  width: 100%;
+    width: 100%
 }
 
-@media screen and (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .row + .row {
-    margin-top: 0;
-  }
-  .row .col + .col {
-    margin-left: 0;
-  }
-  .row .col-1 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-1 {
-    order: 1;
-  }
-  .row .col-2 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-2 {
-    order: 2;
-  }
-  .row .col-3 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-3 {
-    order: 3;
-  }
-  .row .col-4 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-4 {
-    order: 4;
-  }
-  .row .col-5 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-5 {
-    order: 5;
-  }
-  .row .col-6 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-6 {
-    order: 6;
-  }
-  .row .col-7 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-7 {
-    order: 7;
-  }
-  .row .col-8 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-8 {
-    order: 8;
-  }
-  .row .col-9 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-9 {
-    order: 9;
-  }
-  .row .col-10 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-10 {
-    order: 10;
-  }
-  .row .col-11 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-11 {
-    order: 11;
-  }
-  .row .col-12 {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .row .col.col-order-12 {
-    order: 12;
-  }
+@media screen and (max-width:768px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+    .row+.row {
+        margin-top: 0
+    }
+    .row .col+.col {
+        margin-left: 0
+    }
+    .row .col-1 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-1 {
+        order: 1
+    }
+    .row .col-2 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-2 {
+        order: 2
+    }
+    .row .col-3 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-3 {
+        order: 3
+    }
+    .row .col-4 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-4 {
+        order: 4
+    }
+    .row .col-5 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-5 {
+        order: 5
+    }
+    .row .col-6 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-6 {
+        order: 6
+    }
+    .row .col-7 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-7 {
+        order: 7
+    }
+    .row .col-8 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-8 {
+        order: 8
+    }
+    .row .col-9 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-9 {
+        order: 9
+    }
+    .row .col-10 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-10 {
+        order: 10
+    }
+    .row .col-11 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-11 {
+        order: 11
+    }
+    .row .col-12 {
+        width: 100%;
+        margin-top: 20px
+    }
+    .row .col.col-order-12 {
+        order: 12
+    }
 }
 
 
