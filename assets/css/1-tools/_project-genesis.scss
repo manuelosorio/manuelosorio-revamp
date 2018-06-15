@@ -1,3 +1,388 @@
+.btn {
+    font: "Fira Sans", sans-serif;
+    text-align: center;
+    background: rgba(42, 216, 211, 1);
+    color: rgba(20, 110, 108, 1);
+    text-decoration: none;
+    padding: .25em .35em;
+    display: inline-block;
+    transition: 200ms ease-in-out;
+    max-width: 250px
+}
+
+.btn:hover {
+    background: rgba(20, 110, 108, 1);
+    color: rgba(42, 216, 211, 1)
+}
+
+.btn.round {
+    border-radius: 8px
+}
+
+.btn.navy {
+    background: rgba(20, 20, 73, 1);
+    color: rgba(47, 47, 173, 1)
+}
+
+.btn.navy:hover {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(20, 20, 73, 1)
+}
+
+.btn.outline.navy {
+    background-color: transparent;
+    border-color: rgba(20, 20, 73, 1);
+    border-style: solid;
+    color: rgba(20, 20, 73, 1)
+}
+
+.btn.outline.navy:hover {
+    background: rgba(20, 20, 73, 1);
+    color: rgba(47, 47, 173, 1)
+}
+
+.btn.blue {
+    background: rgba(0, 51, 153, 1);
+    color: rgba(26, 102, 255, 1)
+}
+
+.btn.blue:hover {
+    background: rgba(0, 9, 26, 1);
+    color: rgba(0, 51, 153, 1)
+}
+
+.btn.outline.blue {
+    background-color: transparent;
+    border-color: rgba(0, 51, 153, 1);
+    border-style: solid;
+    color: rgba(0, 51, 153, 1)
+}
+
+.btn.outline.blue:hover {
+    background: rgba(0, 51, 153, 1);
+    color: rgba(26, 102, 255, 1)
+}
+
+.btn.aqua {
+    background: rgba(42, 216, 211, 1);
+    color: rgba(150, 236, 233, 1)
+}
+
+.btn.aqua:hover {
+    background: rgba(20, 110, 108, 1);
+    color: rgba(42, 216, 211, 1)
+}
+
+.btn.outline.aqua {
+    background-color: transparent;
+    border-color: rgba(42, 216, 211, 1);
+    border-style: solid;
+    color: rgba(42, 216, 211, 1)
+}
+
+.btn.outline.aqua:hover {
+    background: rgba(42, 216, 211, 1);
+    color: rgba(150, 236, 233, 1)
+}
+
+.btn.teal {
+    background: rgba(20, 91, 91, 1);
+    color: rgba(43, 196, 196, 1)
+}
+
+.btn.teal:hover {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(20, 91, 91, 1)
+}
+
+.btn.outline.teal {
+    background-color: transparent;
+    border-color: rgba(20, 91, 91, 1);
+    border-style: solid;
+    color: rgba(20, 91, 91, 1)
+}
+
+.btn.outline.teal:hover {
+    background: rgba(20, 91, 91, 1);
+    color: rgba(43, 196, 196, 1)
+}
+
+.btn.olive {
+    background: rgba(77, 102, 52, 1);
+    color: rgba(141, 178, 104, 1)
+}
+
+.btn.olive:hover {
+    background: rgba(13, 18, 9, 1);
+    color: rgba(77, 102, 52, 1)
+}
+
+.btn.outline.olive {
+    background-color: transparent;
+    border-color: rgba(77, 102, 52, 1);
+    border-style: solid;
+    color: rgba(77, 102, 52, 1)
+}
+
+.btn.outline.olive:hover {
+    background: rgba(77, 102, 52, 1);
+    color: rgba(141, 178, 104, 1)
+}
+
+.btn.green {
+    background: rgba(0, 102, 0, 1);
+    color: rgba(0, 230, 0, 1)
+}
+
+.btn.green:hover {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(0, 102, 0, 1)
+}
+
+.btn.outline.green {
+    background-color: transparent;
+    border-color: rgba(0, 102, 0, 1);
+    border-style: solid;
+    color: rgba(0, 102, 0, 1)
+}
+
+.btn.outline.green:hover {
+    background: rgba(0, 102, 0, 1);
+    color: rgba(0, 230, 0, 1)
+}
+
+.btn.lime {
+    background: rgba(51, 204, 51, 1);
+    color: rgba(153, 230, 153, 1)
+}
+
+.btn.lime:hover {
+    background: rgba(26, 102, 26, 1);
+    color: rgba(51, 204, 51, 1)
+}
+
+.btn.outline.lime {
+    background-color: transparent;
+    border-color: rgba(51, 204, 51, 1);
+    border-style: solid;
+    color: rgba(51, 204, 51, 1)
+}
+
+.btn.outline.lime:hover {
+    background: rgba(51, 204, 51, 1);
+    color: rgba(153, 230, 153, 1)
+}
+
+.btn.yellow {
+    background: rgba(244, 238, 28, 1);
+    color: rgba(250, 247, 150, 1)
+}
+
+.btn.yellow:hover {
+    background: rgba(138, 134, 7, 1);
+    color: rgba(244, 238, 28, 1)
+}
+
+.btn.outline.yellow {
+    background-color: transparent;
+    border-color: rgba(244, 238, 28, 1);
+    border-style: solid;
+    color: rgba(244, 238, 28, 1)
+}
+
+.btn.outline.yellow:hover {
+    background: rgba(244, 238, 28, 1);
+    color: rgba(250, 247, 150, 1)
+}
+
+.btn.orange {
+    background: rgba(204, 102, 0, 1);
+    color: rgba(255, 166, 77, 1)
+}
+
+.btn.orange:hover {
+    background: rgba(77, 38, 0, 1);
+    color: rgba(204, 102, 0, 1)
+}
+
+.btn.outline.orange {
+    background-color: transparent;
+    border-color: rgba(204, 102, 0, 1);
+    border-style: solid;
+    color: rgba(204, 102, 0, 1)
+}
+
+.btn.outline.orange:hover {
+    background: rgba(204, 102, 0, 1);
+    color: rgba(255, 166, 77, 1)
+}
+
+.btn.red {
+    background: rgba(221, 42, 42, 1);
+    color: rgba(239, 152, 152, 1)
+}
+
+.btn.red:hover {
+    background: rgba(117, 19, 19, 1);
+    color: rgba(221, 42, 42, 1)
+}
+
+.btn.outline.red {
+    background-color: transparent;
+    border-color: rgba(221, 42, 42, 1);
+    border-style: solid;
+    color: rgba(221, 42, 42, 1)
+}
+
+.btn.outline.red:hover {
+    background: rgba(221, 42, 42, 1);
+    color: rgba(239, 152, 152, 1)
+}
+
+.btn.maroon {
+    background: rgba(128, 0, 0, 1);
+    color: rgba(255, 1, 1, 1)
+}
+
+.btn.maroon:hover {
+    background: rgba(1, 0, 0, 1);
+    color: rgba(128, 0, 0, 1)
+}
+
+.btn.outline.maroon {
+    background-color: transparent;
+    border-color: rgba(128, 0, 0, 1);
+    border-style: solid;
+    color: rgba(128, 0, 0, 1)
+}
+
+.btn.outline.maroon:hover {
+    background: rgba(128, 0, 0, 1);
+    color: rgba(255, 1, 1, 1)
+}
+
+.btn.fuchsia {
+    background: rgba(204, 51, 153, 1);
+    color: rgba(230, 153, 204, 1)
+}
+
+.btn.fuchsia:hover {
+    background: rgba(102, 26, 77, 1);
+    color: rgba(204, 51, 153, 1)
+}
+
+.btn.outline.fuchsia {
+    background-color: transparent;
+    border-color: rgba(204, 51, 153, 1);
+    border-style: solid;
+    color: rgba(204, 51, 153, 1)
+}
+
+.btn.outline.fuchsia:hover {
+    background: rgba(204, 51, 153, 1);
+    color: rgba(230, 153, 204, 1)
+}
+
+.btn.purple {
+    background: rgba(84, 17, 86, 1);
+    color: rgba(188, 38, 192, 1)
+}
+
+.btn.purple:hover {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(84, 17, 86, 1)
+}
+
+.btn.outline.purple {
+    background-color: transparent;
+    border-color: rgba(84, 17, 86, 1);
+    border-style: solid;
+    color: rgba(84, 17, 86, 1)
+}
+
+.btn.outline.purple:hover {
+    background: rgba(84, 17, 86, 1);
+    color: rgba(188, 38, 192, 1)
+}
+
+.btn.silver {
+    background: rgba(226, 226, 226, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.btn.silver:hover {
+    background: rgba(162, 162, 162, 1);
+    color: rgba(226, 226, 226, 1)
+}
+
+.btn.outline.silver {
+    background-color: transparent;
+    border-color: rgba(226, 226, 226, 1);
+    border-style: solid;
+    color: rgba(226, 226, 226, 1)
+}
+
+.btn.outline.silver:hover {
+    background: rgba(226, 226, 226, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+.btn.grey {
+    background: rgba(168, 168, 168, 1);
+    color: rgba(232, 232, 232, 1)
+}
+
+.btn.grey:hover {
+    background: rgba(104, 104, 104, 1);
+    color: rgba(168, 168, 168, 1)
+}
+
+.btn.outline.grey {
+    background-color: transparent;
+    border-color: rgba(168, 168, 168, 1);
+    border-style: solid;
+    color: rgba(168, 168, 168, 1)
+}
+
+.btn.outline.grey:hover {
+    background: rgba(168, 168, 168, 1);
+    color: rgba(232, 232, 232, 1)
+}
+
+.btn.black {
+    background: rgba(22, 22, 22, 1);
+    color: rgba(86, 86, 86, 1)
+}
+
+.btn.black:hover {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(22, 22, 22, 1)
+}
+
+.btn.outline.black {
+    background-color: transparent;
+    border-color: rgba(22, 22, 22, 1);
+    border-style: solid;
+    color: rgba(22, 22, 22, 1)
+}
+
+.btn.outline.black:hover {
+    background: rgba(22, 22, 22, 1);
+    color: rgba(86, 86, 86, 1)
+}
+
+.btn.small {
+    font-size: 0.9em
+}
+
+.btn.medium {
+    font-size: 1.25em
+}
+
+.btn.large {
+    font-size: 1.65em
+}
+
 .row {
     display: flex;
     overflow: hidden;

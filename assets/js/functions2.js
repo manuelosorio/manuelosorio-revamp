@@ -57,21 +57,29 @@ function fixedNav() {
 }
 
 function modal() {
-  var modal =document.querySelector('#modal');
+  var modal =document.getElementById('modal');
+  var button =document.querySelector('#openmodal');
   var nav = document.querySelector(".nav");
   var hero = document.querySelector("#about");
   var about = document.querySelector("#hero");
   var title= document.querySelector("#services-title");
   var services = document.querySelector("#services");
+  var featServices = document.querySelector("#featured-services-wrap");
   var footer = document.querySelector("footer");
-
-  if (modal.classList.contains("active")){
-    nav.classList.add("blur");
-    hero.classList.add("blur");
-    about.classList.add("blur");
-    title.classList.add("blur");
-    services.classList.add("blur");
-    footer.classList.add("blur");
+  button.addEventListener("click", openModal);
+  function openModal() {
+    featServices.classList.add("zindex");
+    if (featServices.classList.contains("zindex")) {
+      modal.classList.add("active");
+    }
+    if (modal.classList.contains("active")){
+      nav.classList.add("blur");
+      hero.classList.add("blur");
+      about.classList.add("blur");
+      title.classList.add("blur");
+      services.classList.add("blur");
+      footer.classList.add("blur");
+    }
   }
 }
 
