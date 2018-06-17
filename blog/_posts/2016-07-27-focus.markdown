@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Focus"
+date:   2016-7-27 11:57pm
+author: Manuel Osorio
+categories: "Thoughts"
+keywords: "Focus, multitasking, task switching"
+permalink: blog/posts/2016/july/:title/
+preview: I often find myself bouncing from one project to the other. To some it my just seam like I am multitasking but in reality I'm not and in the end...
+---
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I often find myself bouncing from one project to the other. To some it my just seam like I am multitasking but in reality I'm not and in the end I don't get any of my projects done. When I do that, I am constantly losing focus.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overtime I've learned that "multitasking" is not often a good thing. Would it be possible to focus on redesigning my website (or writing this blog post), while watching TV, texting my friends, or anything else besides whatever I am trying to accomplish. No because multitasking isn't really a thing, what that is called task switching. Every time you sift your focus to something else you are actually switching tasks. After you read this try to talk to someone while writing down something unrelated to your conversation and  listening to someone else talking to you. Were you able to focus on all three things at once? If not (and be honest with yourself) you were only focusing on one of the 3 or constantly switching between the three. The sad
+truth is that multitasking actually ruins the quality of work. Take this blog post for example, I already had this post planned out for a while and it's Wednesday July 27 at the moment I finished writing this sentence was 11:35pm and I started writing this at 5am and I probably won't post till Thursday (it's not an exaggeration, I will literally write the time after I am done with this sentence).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Few steps you can take to help keep focus:
+
+1. Plan out your day
+	* Have a set schedule to keep you on track of what needs to be accomplish that day
+
+2. Pretend to listen to music using headphones
+	* People tend to not want to bother someone who is listening to music.
+
+3. Listen to music
+	* If step 2 doesn't work actually put on some music on and temporally shot of the outside world.
+	* Make sure if to ignore the lyrics of the song and if you can't do that listen to instrumentals
+
+4. See your tasks to the end before starting new ones
+	* This one is pretty self explanatory don't you think.
+
+<!-- > lorem ipsum -->
+
+I hope this wasn't too bad of a post. Have a great day, <br />
+&nbsp;&nbsp;&nbsp;Manuel Osorio
+
+After Note: I finished writing this at 11:52pm and uploaded at 11:57pm (dang cutting close there). Also I have 2 posting being worked on and am Currently working on next weeks posts.

@@ -1,0 +1,45 @@
+<section id="featured-services-wrap">
+  <h3 id="services-title">SERVICES</h3>
+  <!-- <p>
+    My <strong>Brand Identity Design</strong> services include:
+    <ul>
+      <li>Logo</li>
+      <li>Business Card</li>
+      <li>Letter Head</li>
+      <li>Envelopes</li>
+    </ul>
+    My <strong>Website Development</strong> services include Front-End Single or multi-page websites.
+  </p> -->
+  <!--
+            Hidden Inputs for Pure CSS input styling
+  -->
+
+  {% for head in site.data.settings.head %}
+    <form id="contactform" method="POST">
+      {% for services in site.data.settings.services %}
+        <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
+        {% endfor %}
+        <div class="services row" id="services">
+          {% for services in site.data.settings.services %}
+          <label class="col col-4 service" for="{{ services.ID}}">
+            <span class="services custom-radio" service="{{ services.ID }}"></span>
+            <div>
+              <img src="assets/img/services/{{ services.ID}}.svg" alt="{{ services.title }}, Manuel Osorio" title="{{services.title}}, Manuel Osorio">
+              <p>{{ services.title }}</p>
+            </div>
+          </label>
+          {% endfor %}
+        </div>
+      <div class="buttons">
+        <a href="#" class="button order-2">Learn More</a>
+        <div class="button order-1" id="openmodal">Send Message</div>
+      </div>
+      {% include partials/pages/about/modal.html %}
+    </form>
+    <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + '{{ head.email }}');
+    </script>
+  {% endfor %}
+
+</section>

@@ -9,9 +9,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
+    "lodash": "^4.17.4"
+  },
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-shell": "^0.5.2",
     "lodash": "^4.13.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/manuelosorio/Website-Revamp.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/manuelosorio/Website-Revamp/issues"
+  },
+  "homepage": "https://gitlab.com/manuelosorio/Website-Revamp#README"
 }

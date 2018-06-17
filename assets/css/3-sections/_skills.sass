@@ -1,0 +1,126 @@
+#skills
+  h3
+    text-align: center
+    color: rgba($bg-color-light, 1)
+    position: relative
+    width: 90%
+    z-index: 3
+    top: -2em
+.skills-wrap
+  +display(flex)
+  flex-direction: row
+  max-width: 85%
+  margin: 0 auto 80px auto
+  color: $bg-color-light
+  +clearfix
+  flex-wrap: wrap
+  position: relative
+  top: -50px
+  z-index: 3
+
+  .skills-unit
+    flex-direction: row
+    width: 50%
+    float: left
+    margin-bottom: 15px
+
+
+    .skills-icons
+      font-size: 15px
+      // margin: 3px 0 30px
+      &::after
+        // content: "#{$i}"
+      span
+        display: inline-block
+        width: 10%
+        height: 25px
+        margin: -5px
+        background-color: $primary-light
+        transform: skewX(15deg)
+        position: relative
+        z-index: 0
+        // margin-right: 8px
+        // border-radius: 50%
+
+        &:after
+          content: ''
+          display: block
+          +size(10px)
+          // f
+
+          // border-radius: 50%
+          // margin: 2px
+
+
+      @for $i from 0 through 10
+        // .skills-icons:last-child:before
+        &.skills-#{$i} span:nth-child(n+#{$i+1})
+          @extend %skill-color
+        &.skills-#{$i} span:last-child:after
+          content: "#{$i}"
+          position: relative
+          z-index: 1
+          color: $primary-light
+          font-size: 16px
+          margin: 0 auto
+          // text-align: center
+@media all and (max-width: 650px)
+  #skills h3
+    top: -3.4em
+  .skills-wrap
+    top: -6em
+@media all and (max-width: 540px)
+  .skills-wrap
+    width: 100%
+    top: -7.4em
+    .skills-unit
+      width:  100%
+
+      .skills-icons span
+        width: 11%
+
+
+
+  .fixed ~ #skills
+    top: 47.5em
+  #skills
+    top: 38.5em
+    h3
+      top: -1.4em
+  .skills-wrap
+    top: -1.4em
+
+%skill-color
+  background: $bg-color-light
+@media all and (max-width: 480px)
+  .fixed ~ #skills, #skills
+    top: 34.5em
+    h3
+
+  .profile-wrap
+    z-index: 0
+    .face-img::before
+      z-index: 0
+      top: 2.5em
+
+
+#skills
+  position: relative
+  top: 51em
+  background: rgba($primary, 1)
+  padding-bottom: 0
+  .fixed ~ #skills
+    top: 52em
+  h3
+
+
+
+@media all and (max-width: 370px)
+
+  .fixed ~ #skills
+    h3
+      top: -3.4em
+  .skills-wrap
+    top: -4.4em
+  #skills
+    h3

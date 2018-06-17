@@ -3,7 +3,7 @@ layout: post
 title:  "Consistency"
 date:   2016-01-20 11:59pm
 author: Manuel Osorio
-keywords: "Conistency, Post Buffer"
+keywords: "Consistency, Post Buffer"
 categories:
 permalink: blog/posts/2016/january/:title/
 preview: "On August 31st, 2015, I announced that I was going to start my own blog. I made a promise that every two weeks on Wednesday I will post new content on my blog...."

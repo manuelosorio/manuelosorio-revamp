@@ -88,16 +88,15 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a {
-    color: $brand-color;
-    text-decoration: none;
+ a{
+    color: $primary-light;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $primary-light;
     }
 
     &:hover {
-        color: $text-color;
+        color: $primary;
 
     }
 }
@@ -126,12 +125,11 @@ blockquote {
  * Code formatting
  */
 pre,
-code {
-    font-size: 15px;
-    border: 3px solid #3f3f3f;
+code, .highlight {
+    font-size: 15px !important;
+    border: 1.5px solid rgba(darken(rgba(255, 255, 255, 1), 25%), 0.99999999999);
     border-radius: 3px;
-		background-color: lighten(#3f3f3f, 15%);
-		color: antiquewhite
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 code {
@@ -140,7 +138,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;

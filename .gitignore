@@ -76,7 +76,7 @@ Intro-StormofColorRunfixed.mp4
 
 .vscode/
 
-node-modules/
+node_modules/
 _site/
 blog/drafts/
 
@@ -95,3 +95,6 @@ img/hero1.png
 img/hero3.png
 img/bg.png
 img/face.jpg
+
+.jekyll-metadata
+package-lock.json

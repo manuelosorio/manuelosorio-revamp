@@ -1,0 +1,14 @@
+    <link rel="stylesheet" href="/assets/css/all2.css"/>
+    <link rel="stylesheet" href="/assets/css/blog.css"/>
+    <meta charset="utf-8">
+    {% for head in site.data.settings.head %}
+    <title>Manuel Osorio | {{ page.title }}</title>
+      <meta name="Keywords" content="{{ head.keywords}}, {{ page.keywords }}" />
+        <meta http-equiv="default-style">
+        <meta name="author" content="{{ head.name }}" />
+        <meta name="description" content="{{ head.description }}" />
+    {% endfor %}
+    <meta name="theme-color" content="#323232">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/icons/favicon.ico" type="image/x-icon">

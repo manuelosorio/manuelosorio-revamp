@@ -4,7 +4,7 @@
     AddType 'text/html; charset=UTF-8' html
 </FilesMatch>
 </IfModule>
-ErrorDocument 404 /404.html
+
 
 
 ## EXPIRES CACHING ##

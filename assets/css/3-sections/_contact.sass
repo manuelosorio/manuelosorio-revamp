@@ -1,101 +1,182 @@
-
-.section-contact
-    background: $bg-color-light
-    color: $primary-light
-
-
-.email
-    +display(flex)
-    +justify-content(center)
-    color: $primary
-    padding: 15px
-    font-weight: 300
-    font-size: 5vw
-    @media screen and (max-width: 750px)
-        font-size: 26px
-        font-weight: 200
-.hire-me
-    display: flex
-    justify-content: center
-    flex-direction: row
-    flex-wrap: nowrap
-    align-items: center
-    font-weight: 100
-
-    span
-        width: 19vw
-        height: 4px
-        background-color: $primary-light
-        border-radius: 5px
-    h2
-        margin: 30px
-        color: $primary
-        font-size: 5vw
-        font-weight: 100
-        @media screen and (max-width: 750px)
-            font-size: 24px
 #contactform
-    +display(flex)
-    +flex-wrap(wrap)
-    +flex-direction(column)
-    margin:
-        left: 10%
-        right: 10%
+  // +display(flex)
+  // +flex-wrap(wrap)
+  // +flex-direction(column)
+  // .flex-wrap
+  //   +justify-content(space-around)
+  //   +flex-wrap(nowrap)
 
-
+    .email
+      font-size: 28px
+      font-weight: 800
     .flex-wrap
-        +justify-content(space-around)
-        +flex-wrap(nowrap)
-        input.name
-            width: 600px
-            &:first-child
-                margin-right: 13px
-            &:last-child
-                margin-left: 13px
-    @media screen and (max-width: 750px)
-        .email
-            font-size: 28px
-            font-weight: 800
-        .flex-wrap
-            +flex-wrap(wrap)
-            input.name:first-child, input.name:last-child
-                margin-left: 0
-                margin-right: 0
+      +flex-wrap(wrap)
+      input.name:first-child, input.name:last-child
+        margin-left: 0
+        margin-right: 0
+  input[type="text"], input[type="email"], textarea
+    // margin: 15px
+    padding: 10px
+    border:
+      color: $primary-light
+      width: 2px
+      style: solid
+    background: transparent
+    &::-webkit-input-placeholder
+      color: $primary-light
+textarea
+  min-width: inherit
 
-    input[type="text"], input[type="email"], textarea
-        margin:
-            bottom: 15px
-            top: 15px
-        padding:
-            left: 15px
-            bottom: 15px
-            top: 15px
-        border:
-            color: $primary-light
-            width: 2px
-            style: solid
-            radius: 5px
-        background: transparent
-        &::-webkit-input-placeholder
-            color: $primary-light
-        input[type="text"]:nth-child(2)
-            margin-left: 15px
-        .name
 
-    input[type="submit"]
-        margin-bottom: 15px
-        padding: 10px
-        width: 250px
-        +transition($trans)
+
+#modal
+  background:
+    color: rgba($primary, 0.75)
+  display: flex
+  justify-content: center
+  filter: blur(0) !important
+  height: 100vh
+  width: 100vw
+  position: fixed
+  z-index: -1
+  top: 0
+  right: 0
+  opacity: 0
+  transition: 200ms ease-in-out
+  &.active
+    z-index: 10
+    opacity: 1
+    > .form
+      transform: scale(1)
+  .form
+    background:
+      color: $bg-color-light
+    height: 90%
+    width: 90%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin:  auto
+    position: fixed
+    overflow-x: hidden
+    overflow-y: auto
+    transform: scale(0)
+    transition: 200ms ease-in-out
+    input, textarea
+      background: transparent
+      margin: 10px
+      border:
         color: $primary-light
-        border:
-            color: $primary-light
-            style: solid
-            radius: 5px
-        background-color: transparent
-        &:hover
-            background-color: $primary-light
-            color: $primary
+        width: 2px
+        style: solid
+      padding: 10px 5px
     textarea
         height: 250px !important
         max-width: 98%
+    input[type="submit"]
+      margin-bottom: 10px
+      padding: 10px
+      width: 250px
+      +transition($trans)
+      color: $primary-light
+      border:
+        color: $primary-light
+        style: solid
+      background-color: transparent
+      &:hover
+        background-color: $primary-light
+        color: $primary
+    @media screen and (max-width:768px)
+      input, textarea,
+        width: 90%
+      input[type="submit"]
+        width: 95%
+.blur
+  filter: blur(5px)
+  overflow-y: hidden
+.zindex
+  z-index: 10 !important
+.buttons
+  display: flex
+  justify-content: space-around
+  text-align: center
+  .button
+    font-size: x-large
+    padding: 15px
+    margin: 15px
+    background: transparent
+    position: relative
+    border-color: rgba($bg-color-light, 1)
+    border-width: 2px
+    border-style: solid
+    width: 32%
+    // border-radius: 5px
+    transform: skewX(-15deg)
+    cursor: pointer
+    color: rgba($bg-color-light, 1)
+    +transition(250ms ease-in-out)
+    &:hover
+      background: rgba($bg-color-light, 1)
+      color: $primary
+  @media screen and (max-width:768px)
+      flex-direction: column
+      .button
+        width: 80%
+        transform: skewX(0)
+        &.order-1
+          order: 1
+        &.order-2
+          order: 2
+.modal-services .service
+  display: flex
+  padding: 0 15px
+  p
+    margin: 0 15px
+  .custom-radio
+    background-color: $primary-light
+    transition: $trans
+    &::before
+      content: "\ea10"
+      font-family: "icomoon"
+      display: block
+      background-color: $primary
+      border-radius: 50%
+      +size(20px)
+      position: relative
+      top: 2.5px
+      left: 2.5px
+      color: white
+      font-size: 12px
+      text-align: center
+      transform: scale(0)
+#close
+  border:
+    color: $primary-light
+    style: solid
+    radius: 50%
+    width: 2px
+  +size(16px)
+  padding: 5px
+  position: relative
+  margin: 15px
+  left: 5px
+  top: 5px
+  +transition(250ms ease-in-out)
+  cursor: pointer
+  &::before
+    content: "\ea0f"
+    // font-size: 18px
+    font-family: "icomoon"
+    color: $primary-light
+    position: relative
+    top: -3px
+    left: 1px
+    font-weight: bold
+  &:hover
+    border-color: $primary
+    background: $primary
+    &::before
+      color: $bg-color-light
+footer
+  display: none

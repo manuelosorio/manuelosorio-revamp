@@ -6,17 +6,16 @@
 	position: absolute
 	top: 0
 	left: 0
-	// z-index: -1
-	background: rgba($primary, 0.55) url("/assets/img/hero.png") no-repeat fixed center top
-	background-size: auto
-	background-blend-mode: soft-light
+	z-index: 1
+	background: url("/assets/img/hero.png") no-repeat fixed center top
+	background-size: cover
 	overflow: hidden
 	&:before
 		content: ''
 		display: block
 		width: 100%
 		height: 150%
-		overflow: hidden
+		// overflow: hidden
 		z-index: 0
 		position: absolute
 		padding-bottom: 300px
@@ -36,7 +35,7 @@
 		// left: 50%
 		// margin-left: -1800px
 		transform: skewY(-4deg)
-		overflow: hidden
+		// overflow: hidden
 	h1
 		z-index: 3
 		position: absolute
