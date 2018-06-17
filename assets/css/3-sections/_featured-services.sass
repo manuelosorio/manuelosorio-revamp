@@ -54,36 +54,37 @@
         margin: 15px 0
         font-size: 1.5em
         color: $bg-color-light
-    .custom-radio
-      +size(25px)
-      background-color: $bg-color-light
-      border-radius: 50%
-      &::before
-        content: "\ea10"
-        font-family: "icomoon"
-        display: block
-        background-color: $primary
-        border-radius: 50%
-        +size(20px)
-        position: relative
-        top: 2.5px
-        left: 2.5px
-        color: white
-        font-size: 12px
-        text-align: center
-        transform: scale(0)
-        transition: $trans
+.custom-radio
+  display: flex
+  +size(25px)
+  background-color: $bg-color-light
+  border-radius: 50%
+  &::before
+    content: "\ea10"
+    font-family: "icomoon"
+    display: block
+    background-color: $primary
+    border-radius: 50%
+    +size(20px)
+    position: relative
+    top: 2.5px
+    left: 2.5px
+    color: white
+    font-size: 12px
+    text-align: center
+    transform: scale(0)
+    transition: $trans
 input[type="radio"]
   display: none
 input#brandID:checked ~ .services .service .custom-radio[service=brandID]::before
   transform: scale(1)
-input#brandID:checked ~ #modal .services .service .custom-radio[service=brandID]::before
+input#brandID:checked ~ #modal .modal-services .service .custom-radio[service=brandID]::before
   transform: scale(1)
 input#logo:checked ~ .services .service .custom-radio[service=logo]::before
   transform: scale(1)
-input#logo:checked ~ #modal .services .service .custom-radio[service=logo]::before
+input#logo:checked ~ #modal .modal-services .service .custom-radio[service=logo]::before
   transform: scale(1)
 input#webDev:checked ~ .services .service .custom-radio[service=webDev]::before
   transform: scale(1)
-input#webDev:checked ~ #modal .services .service .custom-radio[service=webDev]::before
+input#webDev:checked ~ #modal .modal-services .service .custom-radio[service=webDev]::before
   transform: scale(1)

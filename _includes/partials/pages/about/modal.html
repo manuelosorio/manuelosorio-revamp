@@ -10,9 +10,9 @@
       <input type="email" class="col col-6" name="_replyto" required="required" placeholder="Your email">
       <input type="text" class="col col-6" name="company" required="" placeholder="Company Name (optional)">
     </div>
-    <div class="services row">
+    <div class="row modal-services">
       {% for services in site.data.settings.services %}
-        <label class="service col col-3" for="{{services.ID}}">
+        <label class="col col-3 service" for="{{services.ID}}">
           <span class="custom-radio" service="{{ services.ID }}"></span>
           <p>{{services.title}}</p>
         </label>

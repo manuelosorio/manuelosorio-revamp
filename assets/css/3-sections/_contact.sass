@@ -24,10 +24,8 @@
     background: transparent
     &::-webkit-input-placeholder
       color: $primary-light
-    input[type="text"]:nth-child(2)
-      // margin-left: 15px
-
-
+textarea
+  min-width: inherit
 
 
 
@@ -53,7 +51,6 @@
   .form
     background:
       color: $bg-color-light
-    // display: flex
     height: 90%
     width: 90%
     top: 0
@@ -66,14 +63,6 @@
     overflow-y: auto
     transform: scale(0)
     transition: 200ms ease-in-out
-    .services .service
-      background-color: transparent
-      color: $primary
-      max-width: 200px
-      .custom-radio
-        background-color: $primary-light
-      p
-        padding: 0 10px
     input, textarea
       background: transparent
       margin: 10px
@@ -108,26 +97,59 @@
   overflow-y: hidden
 .zindex
   z-index: 10 !important
-.button
+.buttons
   display: flex
-  justify-content: center
-  align-items: center
-  font-size: x-large
-
-  background: transparent
-  position: relative
-  margin: 0 auto
-  border-color: rgba($bg-color-light, 1)
-  border-width: 2px
-  border-style: solid
-  // border-radius: 5px
-  transform: skewX(-15deg)
-  cursor: pointer
-  color: rgba($bg-color-light, 1)
-  +transition(250ms ease-in-out)
-  &:hover
-    background: rgba($bg-color-light, 1)
-    color: $primary
+  justify-content: space-around
+  text-align: center
+  .button
+    font-size: x-large
+    padding: 15px
+    margin: 15px
+    background: transparent
+    position: relative
+    border-color: rgba($bg-color-light, 1)
+    border-width: 2px
+    border-style: solid
+    width: 32%
+    // border-radius: 5px
+    transform: skewX(-15deg)
+    cursor: pointer
+    color: rgba($bg-color-light, 1)
+    +transition(250ms ease-in-out)
+    &:hover
+      background: rgba($bg-color-light, 1)
+      color: $primary
+  @media screen and (max-width:768px)
+      flex-direction: column
+      .button
+        width: 80%
+        transform: skewX(0)
+        &.order-1
+          order: 1
+        &.order-2
+          order: 2
+.modal-services .service
+  display: flex
+  padding: 0 15px
+  p
+    margin: 0 15px
+  .custom-radio
+    background-color: $primary-light
+    transition: $trans
+    &::before
+      content: "\ea10"
+      font-family: "icomoon"
+      display: block
+      background-color: $primary
+      border-radius: 50%
+      +size(20px)
+      position: relative
+      top: 2.5px
+      left: 2.5px
+      color: white
+      font-size: 12px
+      text-align: center
+      transform: scale(0)
 #close
   border:
     color: $primary-light
@@ -143,16 +165,18 @@
   +transition(250ms ease-in-out)
   cursor: pointer
   &::before
-    content: "X"
-    font-size: 18px
-    font-family: "bio-sans", sans-serif
+    content: "\ea0f"
+    // font-size: 18px
+    font-family: "icomoon"
     color: $primary-light
     position: relative
-    top: -8px
-    left: 2px
+    top: -3px
+    left: 1px
     font-weight: bold
   &:hover
     border-color: $primary
     background: $primary
     &::before
       color: $bg-color-light
+footer
+  display: none
