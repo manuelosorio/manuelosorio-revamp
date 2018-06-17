@@ -1,7 +1,7 @@
 #avatar: assets/img/face.jpg
 
 # Build settings
-
+encoding: UTF-8
 
 paginate: 3
 paginate_path: "/blog/:num/"
