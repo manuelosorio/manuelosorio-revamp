@@ -78,10 +78,19 @@ projects:
 - {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
 - {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
 - {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
-#- {name: Personal Branding, folder: 'circle-pop', file: 'circle-pop.html'}
 - {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
 - {name: Storm of Color, folder: 'storm-of-color', file: 'storm-of-color.html'}
 - {name: Stickers, folder: 'stickers', file: 'stickers.html'}
+
+#--------------------------------------------
+
+#Featured Work
+
+featured-projects:
+- {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
+- {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
+- {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
+- {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
 
 #--------------------------------------------
 

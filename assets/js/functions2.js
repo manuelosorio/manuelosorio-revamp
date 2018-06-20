@@ -1,5 +1,4 @@
 $(function() {
-  'use strict';
     toggleNav();
     smoothScroll(300);
     fixedNav();
@@ -7,12 +6,12 @@ $(function() {
     workLoad();
     clientStuff();
     modal();
-    $("header h1").fitText(1, {
-        minFontSize: '20px',
-        maxFontSize: '72px'
-    });
-    $(".biglink").fitText(1.5);
-    $('textarea').autosize();
+    // $("header h1").fitText(1, {
+    //     minFontSize: '20px',
+    //     maxFontSize: '72px'
+    // });
+    // $(".biglink").fitText(1.5);
+    // $('textarea').autosize();
 });
 
 function toggleNav(){

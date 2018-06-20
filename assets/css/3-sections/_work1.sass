@@ -1,123 +1,146 @@
 .section-work
-	// background: $bg-color-light
-	overflow-x: hidden
-	position: relative
-	top: 200px
-	margin-bottom: 20em
+  // background: $bg-color-light
+  overflow-x: hidden
+  position: relative
+  top: 200px
+
+#featured-work
+  // background: $bg-color-light
+  overflow-x: hidden
+  position: relative
+  top: 45em
+  margin: 15px auto
+  h3
+    @extend %small-bold
+    color: rgba($primary, 1)
+    width: 90%
+    margin: 0 auto
+    text-align: center
+    padding: 45px 0 25px 0
+    font-family: $font
+    font-size: 1.5em
+  .work-belt .thumb-wrap .image
+    height: 335px
+    width: 470px
+  .work-container .work-return
+    position: initial
+    p
+      position: inherit
 .work-belt
-	width: 200%
-	position: relative
-	left: 0%
-	+transition($trans)
+  width: 200%
+  position: relative
+  left: 0%
+  +transition($trans)
 .thumb-wrap, .work-wrap
-	width: 50%
-	float: left
+  width: 50%
+  float: left
 .thumb-wrap
-	+display(flex)
-	flex-direction: row
-	flex-wrap: wrap
-	justify-content: center
-	overflow: hidden
+  +display(flex)
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  overflow: hidden
 .image
-	cursor: pointer
-	margin: 20px
-	position: relative
-	transition: 200ms ease-in-out
-	height: 250px
-	width: 350px
-	box-shadow: 0px 2px 10px 3px rgba(#323232, .3)
-	transform: skewY(-3deg)
-	overflow: hidden
-	z-index: 1
-	img
-		transform: scale(1.2) skewY(3deg)
-		height: 250px
-		width: 350px
-		transition: 200ms ease-in-out
-	&:hover
-		transform: scale(1.1)
-		box-shadow: -3px 2px 10px 3px rgba(#323232,0.4)
-		img
-			// opacity: .8
+  cursor: pointer
+  margin: 20px
+  position: relative
+  transition: 200ms ease-in-out
+  height: 250px
+  width: 350px
+  box-shadow: 0px 2px 10px 3px rgba(#323232, .3)
+  transform: skewY(-3deg)
+  overflow: hidden
+  z-index: 1
+  img
+    transform: scale(1.2) skewY(3deg)
+    height: inherit
+    width: inherit
+    transition: 200ms ease-in-out
+  &:hover
+    transform: scale(1.1)
+    box-shadow: -3px 2px 10px 3px rgba(#323232,0.4)
+    img
+      // opacity: .8
 
-			// z-index: 100
-			transform: scale(1.2) skewY(0)
-			filter: blur(5px) brightness(75%)
-			// .info
-			// 	display: block
-	.info
-		+display(inline-flex)
-		transition: 200ms ease-in-out
-		transform: scale(0)
-		position: absolute
+      // z-index: 100
+      transform: scale(1.2) skewY(0)
+      filter: blur(5px) brightness(75%)
+      // .info
+      //   display: block
+  .info
+    +display(inline-flex)
+    transition: 200ms ease-in-out
+    transform: scale(0)
+    position: absolute
 
-		height: 250px
-		width: 350px
+    height: inherit
+    width: inherit
 
-		align-items: center
-		justify-content: center
-		text-align: center
-		z-index: 150
-		.group
-			svg
-				+size(50px)
-				fill: $primary-light
-			p
-				position: relative
-				// right: 40%
-				// text-align: center
-				color: $primary-light
-				font:
-					size: 20px
-					weight: bold
-	&:hover .info
-		transform: scale(1)
+    align-items: center
+    justify-content: center
+    text-align: center
+    z-index: 150
+    .group
+      svg
+        +size(50px)
+        fill: $primary-light
+      p
+        position: relative
+        // right: 40%
+        // text-align: center
+        color: $primary-light
+        font:
+          size: 20px
+          weight: bold
+  &:hover .info
+    transform: scale(1)
 .work-container
-	max-width: 600px
-	margin: 0px auto
-	position: relative
-	display: none
-	h4
-		color: $primary
-		font-weight: 300
-		text-transform: uppercase
-		font-size: 24px
-		line-height: 1.2
-		margin: 0 0 20px
-	img
-		max-width: 100%
-		margin-bottom: 20px
-	.work-return
-		position: fixed
-		left: 25em
-		cursor: pointer
-		svg
-			+size(40px)
-			cursor: pointer
-			opacity: 0.5
-			+position(absolute, -4px null null -60px)
-			+transition($trans)
-			path
-				fill: rgba(0,0,0,0.4)
-			&:hover
-				opacity: 1
-		p
-			font:
-				size: 25px
-				weight: 600
-			color: rgba(0,0,0,0.4)
-			text-transform: capitalize
-			position: relative
-			right: 13px
+  max-width: 600px
+  margin: 0px auto
+  position: relative
+  display: none
+  h4
+    color: $primary
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 1.2
+    margin: 0 0 20px
+  img
+    max-width: 100%
+    margin-bottom: 20px
+  .work-return
+    position: fixed
+    left: 25em
+    cursor: pointer
+    svg
+      +size(40px)
+      cursor: pointer
+      opacity: 0.5
+      +position(absolute, -4px null null -60px)
+      +transition($trans)
+      path
+        fill: rgba(0,0,0,0.4)
+      &:hover
+        opacity: 1
+    p
+      font:
+        size: 25px
+        weight: 600
+      color: rgba(0,0,0,0.4)
+      text-transform: capitalize
+      position: relative
+      right: 13px
 
 @media screen and (max-width: 760px)
-	.work-container
-		.work-return
-			svg
-				left: 0px
-				margin-left: 15%
-			h4
-				margin-left: 30%
-			p
-				margin: 0 15px 20px 15px
+  .work-container
+    .work-return
+      svg
+        left: 0px
+        margin-left: 15%
+      h4
+        margin-left: 30%
+      p
+        margin: 0 15px 20px 15px
+
 @import 'images'

@@ -1,11 +1,12 @@
-<section class="section-work" id="clicked">
+<section id="featured-work" id="clicked">
+  <h3 id="work">Featured dfasfdsfWork</h3>
   <div class="work-belt">
 
     <!--
       Content Tumbnails
     -->
     <div class="thumb-wrap">
-    {% for project in site.data.settings.projects %}
+    {% for project in site.data.settings.featured-projects %}
     <a href="#clicked" class="image" data-folder="{{ project.folder }}">
       <div class="info">
         <div class="group">
@@ -34,8 +35,6 @@
             </div>
         </div>
   </div>
-
-
 
 
 </section>
