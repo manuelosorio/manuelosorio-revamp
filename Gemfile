@@ -6,4 +6,5 @@ gem 'jekyll-paginate'
 gem 'coderay'
 gem 'kramdown'
 gem 'redcarpet'
+gem 'jekyll-feed'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?

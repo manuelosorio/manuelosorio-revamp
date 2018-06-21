@@ -23,9 +23,11 @@
     height: 335px
     width: 470px
   .work-container .work-return
-    position: initial
+    position: relative
+    @media screen and (max-width: 760px)
     p
       position: inherit
+      right: 0
 .work-belt
   width: 200%
   position: relative
@@ -113,6 +115,7 @@
     position: fixed
     left: 25em
     cursor: pointer
+    display: flex
     svg
       +size(40px)
       cursor: pointer
@@ -132,15 +135,5 @@
       position: relative
       right: 13px
 
-@media screen and (max-width: 760px)
-  .work-container
-    .work-return
-      svg
-        left: 0px
-        margin-left: 15%
-      h4
-        margin-left: 30%
-      p
-        margin: 0 15px 20px 15px
 
 @import 'images'

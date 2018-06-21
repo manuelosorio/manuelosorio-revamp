@@ -15,7 +15,7 @@ sass:
   style: :compacted
 
 markdown: kramdown
-plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet, jekyll-tidy]
+plugins: [jekyll-paginate, jekyll-watch, kramdown, coderay, redcarpet, jekyll-tidy, jekyll-feed]
 
 redcarpet:
   extensions: []
@@ -31,6 +31,10 @@ kramdown:
   syntax_highlighter: coderay
   syntax_highlighter_opts: {}
 
+feed:
+  url: https://manuelosorio.me/blog
+  feed: blog/feed.xml
+  author: Manuel Osorios
 
   # coderay:
   #   coderay_wrap:              div
