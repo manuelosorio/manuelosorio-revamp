@@ -22,12 +22,12 @@
   .work-belt .thumb-wrap .image
     height: 335px
     width: 470px
-  .work-container .work-return
-    position: relative
-    @media screen and (max-width: 760px)
-    p
-      position: inherit
-      right: 0
+  // .work-container .work-return
+  //   position: relative
+  //   @media screen and (max-width: 760px)
+  //   p
+  //     position: inherit
+  //     right: 0
 .work-belt
   width: 200%
   position: relative
@@ -112,15 +112,15 @@
     max-width: 100%
     margin-bottom: 20px
   .work-return
-    position: fixed
-    left: 25em
-    cursor: pointer
     display: flex
+    cursor: pointer
+    @media screen and (max-width: 760px)
+      left: 15px
     svg
       +size(40px)
       cursor: pointer
       opacity: 0.5
-      +position(absolute, -4px null null -60px)
+      +position(relative)
       +transition($trans)
       path
         fill: rgba(0,0,0,0.4)
@@ -132,8 +132,8 @@
         weight: 600
       color: rgba(0,0,0,0.4)
       text-transform: capitalize
-      position: relative
-      right: 13px
+      margin-left: 15px
+
 
 
 @import 'images'
