@@ -19,6 +19,7 @@ email: hey@manuelosorio.me
 menu:
 - {name: About, url: "", target: _self}
 - {name: Work, url: 'work', target: '_self'}
+- {name: Services, url: 'services', target: '_self'}
 - {name: Contact, url: 'contact', target: '_self'}
 - {name: Blog, url: 'blog', target: '_self'}
 #- {name: Shop, url: 'shop'}
@@ -76,10 +77,12 @@ services:
 
 projects:
 - {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
-- {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
 - {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
-- {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
 - {name: Storm of Color, folder: 'storm-of-color', file: 'storm-of-color.html'}
+- {name: Project Genesis, folder: 'project-genesis', file: 'project-genesis.html'}
+- {name: Print Squid, folder: 'print-squid', file: 'print-squid.html'}
+- {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
+- {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
 - {name: Stickers, folder: 'stickers', file: 'stickers.html'}
 
 #--------------------------------------------
@@ -88,9 +91,9 @@ projects:
 
 featured-projects:
 - {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
-- {name: Circle Pop Animation, folder: 'circle-pop', file: 'circle-pop.html'}
+- {name: Project Genesis, folder: 'project-genesis', file: 'project-genesis.html'}
+- {name: Print Squid, folder: 'print-squid', file: 'print-squid.html'}
 - {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
-- {name: Dang! That's Good, folder: 'dangthatsgood', file: 'dangthatsgood.html'}
 
 #--------------------------------------------
 
