@@ -11,7 +11,8 @@ gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 gulp.task('serve', function () {
     browserSync.init({
       server: {baseDir: '_site/'},
-      open: false
+      open: false,
+	  port: 80
     });
     // Reloads page when some of the already built files changed:
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);

@@ -90,7 +90,7 @@ projects:
 #Featured Work
 
 featured-projects:
-- {name: Storm The Batey, folder: 'storm-the-batey', file: 'storm-the-batey.html'}
+- {name: Mighty Growler, folder: 'mighty-growler', file: 'mighty-growler.html'}
 - {name: Project Genesis, folder: 'project-genesis', file: 'project-genesis.html'}
 - {name: Print Squid, folder: 'print-squid', file: 'print-squid.html'}
 - {name: New Year Count Down, folder: 'newyear-countdown', file: 'newyear-countdown.html'}
