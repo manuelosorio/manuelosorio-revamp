@@ -67,9 +67,10 @@ skills:
 - {name: Visualization, value: '9'}
 
 services:
-- {ID: brandID, title: Brand Identity Design}
-- {ID: logo, title: Logo Design}
-- {ID: webDev, title: Website Development}
+- {ID: brandID, title: Brand Identity Design, info: "Includes Logo, business cards, envelopes, social media, may also include animated logo for video"}
+- {ID: logo, title: Logo Design, info: "Includes static client-side websites, designed and stlyed to fit your brand. "}
+- {ID: webDev, title: Website Development, info: "Includes both
+services stated above bundled together"}
 
 #--------------------------------------------
 

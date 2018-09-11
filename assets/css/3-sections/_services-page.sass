@@ -1,0 +1,32 @@
+.services-wrap
+  +display(flex)
+  position: relative
+  max-width: 780px
+  min-width: 25%
+  flex-direction: column
+  top: 200px
+  margin: 0 auto
+  .service-group
+    +display(flex)
+    flex-direction: row
+    margin: 25px
+    .service-icon
+      background: $primary
+      min-width: 25%
+      padding: 25px
+      margin-right: 25px
+    .service-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+.buttons.service
+  .button
+    border-color: rgba($primary-light, 1)
+    color: rgba($primary-light, 1)
+    font-size: medium
+    margin: 0
+    width: 100%
+    transform: skewX(0)
+    &:hover
+      background: rgba($primary-light, 1)
+      color: $bg-color-light

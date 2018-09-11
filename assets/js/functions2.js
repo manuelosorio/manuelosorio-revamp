@@ -6,12 +6,6 @@ $(function() {
     workLoad();
     clientStuff();
     modal();
-    // $("header h1").fitText(1, {
-    //     minFontSize: '20px',
-    //     maxFontSize: '72px'
-    // });
-    // $(".biglink").fitText(1.5);
-    // $('textarea').autosize();
 });
 
 function toggleNav(){
@@ -60,13 +54,13 @@ function modal() {
   var modal =document.querySelector('#modal');
   var button =document.querySelector('#openmodal');
   var close = document.querySelector('#close');
-  var nav = document.querySelector(".nav");
-  var hero = document.querySelector("#about");
-  var about = document.querySelector("#hero");
-  var title= document.querySelector("#services-title");
-  var services = document.querySelector("#services");
-  var featServices = document.querySelector("#featured-services-wrap");
-  var footer = document.querySelector("footer");
+  var nav = document.querySelector('.nav');
+  var hero = document.querySelector('#about');
+  var about = document.querySelector('#hero');
+  var title= document.querySelector('#services-title');
+  var services = document.querySelector('#services');
+  var featServices = document.querySelector('#featured-services-wrap');
+  var footer = document.querySelector('footer');
   button.addEventListener("click", openModal);
   close.addEventListener("click", closeModal);
   function openModal() {
@@ -75,23 +69,23 @@ function modal() {
       modal.classList.add("active");
     }
     if (modal.classList.contains("active")){
-      nav.classList.add("blur");
-      hero.classList.add("blur");
-      about.classList.add("blur");
-      title.classList.add("blur");
-      services.classList.add("blur");
-      footer.classList.add("blur");
+      nav.classList.add('blur');
+      hero.classList.add('blur');
+      about.classList.add('blur');
+      title.classList.add('blur');
+      services.classList.add('blur');
+      footer.classList.add('blur');
     }
   }
   function closeModal() {
     featServices.classList.remove("zindex");
     modal.classList.remove("active");
-    nav.classList.remove("blur");
-    hero.classList.remove("blur");
-    about.classList.remove("blur");
-    title.classList.remove("blur");
-    services.classList.remove("blur");
-    footer.classList.remove("blur");
+    nav.classList.remove('blur');
+    hero.classList.remove('blur');
+    about.classList.remove('blur');
+    title.classList.remove('blur');
+    services.classList.remove('blur');
+    footer.classList.remove('blur');
   }
 }
 
