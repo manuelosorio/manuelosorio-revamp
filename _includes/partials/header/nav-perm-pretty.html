@@ -4,7 +4,7 @@
 
         <div class="links">
             {% for item in site.data.settings.menu %}
-                <a {% if item.url == page.url-name %}class="active"{% endif %} id="{{ item.id }}" href="{{ item.url }}">{{ item.name }}</a>
+                <a {% if item.url == page.url-name %}class="active"{% endif %} id="{{ item.id }}" {% if item.name == 'Contact' %} href="#" {% else %}  href="../{{ item.url }}"  {% endif %}>{{ item.name }}</a>
             {% endfor %}
 
                 <a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a>
@@ -20,7 +20,7 @@
         <div class="mobile-nav">
           {% for item in site.data.settings.menu %}
             <div>
-              <a {% if item.url == page.url-name %}class="active"{% endif %} href="../{{ item.url }}">{{ item.name }}</a>
+              <a {% if item.url == page.url-name %}class="active"{% endif %} {% if item.name == 'Contact' %} href="#" {% else %}  href="../{{ item.url }}}"  {% endif %}>{{ item.name }}</a>
             </div>
             {% endfor %}
             <div><a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a></div>
