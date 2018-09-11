@@ -40,24 +40,39 @@ I do web design, icons, logos.
   <script src="../assets/js/functions2.js"></script>
   <script type="text/javascript">
     var modal =document.querySelector('#modal');
+    var contact = document.querySelector('#contact');
     var nav = document.querySelector('.nav');
     var hero = document.querySelector('.page-hero');
-    var title= document.querySelector("#services-title");
-    var services = document.querySelector('#services');
+    // var title= document.querySelector('#services-title');
+    // var services = document.querySelector('.services-wrap');
     var featServices = document.querySelector('#services-page');
     var footer = document.querySelector('footer');
+
+    contact.addEventListener('click', modalOpen);
     function modalOpen() {
-      featServices.classList.add("zindex");
-      if (featServices.classList.contains("zindex")) {
-        modal.classList.add("active");
+      featServices.classList.add('zindex');
+      if (featServices.classList.contains('zindex')) {
+        modal.classList.add('active');
       }
-      if (modal.classList.contains("active")){
-        nav.classList.add("blur");
-        hero.classList.add("blur");
-        title.classList.add("blur");
-        services.classList.add("blur");
-        footer.classList.add("blur");
+      if (modal.classList.contains('active')){
+        nav.classList.add('blur');
+        hero.classList.add('blur');
+        // title.classList.add('blur');
+        // services.classList.add('blur');
+        footer.classList.add('blur');
       }
+
+    }
+    var close = document.querySelector('#close');
+    close.addEventListener('click', modalClose);
+    function modalClose() {
+      featServices.classList.remove('zindex');
+      modal.classList.remove('active');
+      nav.classList.remove('blur');
+      hero.classList.remove('blur');
+      // title.classList.remove('blur');
+      // services.classList.remove('blur');
+      footer.classList.remove('blur');
     }
   </script>
 </html>

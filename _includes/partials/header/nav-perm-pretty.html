@@ -4,7 +4,7 @@
 
         <div class="links">
             {% for item in site.data.settings.menu %}
-                <a {% if item.url == page.url-name %}class="active"{% endif %} href="../{{ item.url }}">{{ item.name }}</a>
+                <a {% if item.url == page.url-name %}class="active"{% endif %} id="{{ item.id }}" href="{{ item.url }}">{{ item.name }}</a>
             {% endfor %}
 
                 <a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a>
