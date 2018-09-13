@@ -16,7 +16,7 @@
               {% if page.url contains item.url %}
                 {% assign current = 'active' %}
               {% endif %}
-                <a class="{{ current }}" href="{{ item.url }}" target="{{ item.target }}">{{ item.name }}</a>
+                <a class="{{ current }}" href="{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}"  {% endif %} >{{ item.name }}</a>
             {% endfor %}
                 <a href="https://mkdesignz.spreadshirt.com/" target="blank">Store</a>
     </div>

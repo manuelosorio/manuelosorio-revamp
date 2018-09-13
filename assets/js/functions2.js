@@ -51,9 +51,9 @@ function fixedNav() {
 }
 
 function modal() {
-  var modal =document.querySelector('#modal');
   var button =document.querySelector('#openmodal');
   var close = document.querySelector('#close');
+  var modal =document.querySelector('#modal');
   var nav = document.querySelector('.nav');
   var hero = document.querySelector('#about');
   var about = document.querySelector('#hero');
