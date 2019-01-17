@@ -2,14 +2,14 @@
   <form id="contactform" method="post">
     {% for service in site.data.settings.services %}
       <input type="radio" id="{{ service.ID }}" name="service" value="{{service.ID}}">
-      <div class="service-group">
+      <div class="service-group" blur="false">
         <div class="service-icon">
           <img src="../assets/img/services/{{service.ID}}.svg" alt="Manuel Osorio - {{service.title}}" title="Manuel Osorio - {{service.title}}">
         </div>
         <div class="service-info">
           <p><strong>{{service.title}}</strong>, {{service.info}}</p>
           <span class="buttons service" id="service">
-            <label class="button" for="{{ service.ID }}" onclick="modalOpen()">Contact</label>
+            <label class="button" for="{{ service.ID }}" onclick="">Contact</label>
           </span>
         </div>
       </div>

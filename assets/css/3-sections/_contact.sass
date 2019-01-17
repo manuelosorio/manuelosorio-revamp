@@ -90,9 +90,13 @@ textarea
         width: 90%
       input[type="submit"]
         width: 95%
-.blur
+[blur="true"]
   filter: blur(5px)
   overflow-y: hidden
+  &:before
+    filter: blur(5px)
+  &:after
+    filter: blur(5px)
 .zindex
   z-index: 10 !important
 .buttons

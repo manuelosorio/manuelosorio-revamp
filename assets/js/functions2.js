@@ -52,16 +52,20 @@ function fixedNav() {
 
 function modal() {
   var button =document.querySelector('#openmodal');
+  var contactNav =document.querySelector('#contact-nav');
   var close = document.querySelector('#close');
   var modal =document.querySelector('#modal');
+  // var blur = document.querySelector('[blur]');
   var nav = document.querySelector('.nav');
   var hero = document.querySelector('#about');
   var about = document.querySelector('#hero');
-  var title= document.querySelector('#services-title');
   var services = document.querySelector('#services');
   var featServices = document.querySelector('#featured-services-wrap');
   var footer = document.querySelector('footer');
+  
+  contactNav.addEventListener("click", openModal);
   button.addEventListener("click", openModal);
+
   close.addEventListener("click", closeModal);
   function openModal() {
     featServices.classList.add("zindex");
