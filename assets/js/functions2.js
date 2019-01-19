@@ -1,11 +1,13 @@
 $(function() {
+
     toggleNav();
-    smoothScroll(300);
+
     fixedNav();
     workBelt();
     workLoad();
     clientStuff();
     modal();
+    smoothScroll(300);
 });
 
 function toggleNav(){
@@ -15,7 +17,7 @@ function toggleNav(){
   });
 }
 function smoothScroll(duration) {
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').not('[href="#"]').not('[href="#0"]').on('click', function(event) {
         var target = $($(this).attr('href'));
         if (target.length) {
             event.preventDefault();
@@ -51,46 +53,35 @@ function fixedNav() {
 }
 
 function modal() {
-  var button =document.querySelector('#openmodal');
-  var contactNav =document.querySelector('#contact-nav');
-  var close = document.querySelector('#close');
-  var modal =document.querySelector('#modal');
-  // var blur = document.querySelector('[blur]');
-  var nav = document.querySelector('.nav');
-  var hero = document.querySelector('#about');
-  var about = document.querySelector('#hero');
-  var services = document.querySelector('#services');
-  var featServices = document.querySelector('#featured-services-wrap');
-  var footer = document.querySelector('footer');
-  
-  contactNav.addEventListener("click", openModal);
-  button.addEventListener("click", openModal);
-
-  close.addEventListener("click", closeModal);
-  function openModal() {
-    featServices.classList.add("zindex");
-    if (featServices.classList.contains("zindex")) {
-      modal.classList.add("active");
-    }
-    if (modal.classList.contains("active")){
-      nav.classList.add('blur');
-      hero.classList.add('blur');
-      about.classList.add('blur');
-      title.classList.add('blur');
-      services.classList.add('blur');
-      footer.classList.add('blur');
-    }
+  var blur = document.querySelectorAll('[data-blur]'),
+      close = document.querySelector('#close'),
+      contactModal = document.querySelectorAll('.openmodal'),
+      modal = document.querySelector('#modal'),
+      i, j;
+  for (i = 0; i < contactModal.length; i++){
+    contactModal[i].addEventListener("click", function(){
+      event.preventDefault();
+      for (j = 0; j < blur.length; j++){
+        if (blur[j].id === "featured-services-wrap"){
+          blur[j].classList.add("zindex");
+        } else {
+          blur[j].classList.add('blur');
+        }
+      }
+      modal.classList.add('active');
+    });
   }
-  function closeModal() {
-    featServices.classList.remove("zindex");
-    modal.classList.remove("active");
-    nav.classList.remove('blur');
-    hero.classList.remove('blur');
-    about.classList.remove('blur');
-    title.classList.remove('blur');
-    services.classList.remove('blur');
-    footer.classList.remove('blur');
-  }
+  close.addEventListener("click", function(){
+    event.preventDefault();
+    for (j = 0; j < blur.length; j++){
+      if (blur[j].id === "featured-services-wrap"){
+        blur[j].classList.remove("zindex");
+      } else {
+        blur[j].classList.remove('blur');
+      }
+    }
+    modal.classList.remove('active');
+  });
 }
 
 function workBelt() {

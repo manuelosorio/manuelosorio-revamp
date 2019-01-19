@@ -2,7 +2,7 @@
   <form id="contactform" method="post">
     {% for service in site.data.settings.services %}
       <input type="radio" id="{{ service.ID }}" name="service" value="{{service.ID}}">
-      <div class="service-group" blur="false">
+      <div class="service-group" data-blur="data-blur">
         <div class="service-icon">
           <img src="../assets/img/services/{{service.ID}}.svg" alt="Manuel Osorio - {{service.title}}" title="Manuel Osorio - {{service.title}}">
         </div>

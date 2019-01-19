@@ -1,4 +1,4 @@
-<div class="nav" blur="false">
+<div class="nav" data-blur="data-blur">
     <a href="/" class="logo">{%  include icons/icon-logo.html %}</a>
     <div class="flex-right">
     {% for link in site.navigation %}
@@ -16,7 +16,7 @@
               {% if page.url contains item.url %}
                 {% assign current = 'active' %}
               {% endif %}
-                <a class="{{ current }}" href="{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}"  {% endif %} >{{ item.name }}</a>
+                <a class="{{ item.class}} {{ current }}" href="{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}"  {% endif %} >{{ item.name }}</a>
             {% endfor %}
                 <a href="https://mkdesignz.spreadshirt.com/" target="blank">Store</a>
     </div>
@@ -33,7 +33,7 @@
             {% if page.url contains item.url %}
               {% assign current = 'active' %}
             {% endif %}
-            <div><a class="{{ current }}" href="{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}" onclick="" {% endif %} >{{ item.name }}</a></div>
+            <div><a class="{{ item.class}} {{ current }}" href="{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}" onclick="" {% endif %} >{{ item.name }}</a></div>
             {% endfor %}
             <div><a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a></div>
         </div>

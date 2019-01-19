@@ -1,5 +1,5 @@
-<section id="featured-services-wrap">
-  <h3 id="services-title" blur="false">SERVICES</h3>
+<section id="featured-services-wrap" data-blur="data-blur">
+  <h3 id="services-title" data-blur="data-blur">SERVICES</h3>
   <!-- <p>
     My <strong>Brand Identity Design</strong> services include:
     <ul>
@@ -19,7 +19,7 @@
       {% for services in site.data.settings.services %}
         <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
         {% endfor %}
-        <div class="services row" id="services" blur="false">
+        <div class="services row" id="services" data-blur="data-blur">
           {% for services in site.data.settings.services %}
           <label class="col col-4 service" for="{{ services.ID}}">
             <span class="services custom-radio" service="{{ services.ID }}"></span>
@@ -30,9 +30,9 @@
           </label>
           {% endfor %}
         </div>
-      <div class="buttons" blur="false">
+      <div class="buttons" data-blur="data-blur">
         <a href="services/" class="button order-2">Learn More</a>
-        <div class="button order-1" id="openmodal">Send Message</div>
+        <div class="button order-1 openmodal">Send Message</div>
       </div>
       {% include partials/pages/contact/modal.html %}
     </form>

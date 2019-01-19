@@ -20,7 +20,7 @@ menu:
 - {name: About, url: "", target: _self}
 - {name: Work, url: 'work', target: '_self'}
 - {name: Services, url: 'services', target: '_self'}
-- {name: Contact, url: '#', target: '_self', id: 'contact-nav'}
+- {name: Contact, url: '#', target: '_self', class: 'openmodal'}
 - {name: Blog, url: 'blog', target: '_self'}
 #- {name: Shop, url: 'shop'}
 
