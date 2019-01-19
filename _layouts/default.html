@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-  		{% include partials/meta/head-blog.html %}
-		<link rel="stylesheet" href="https://s3.amazonaws.com/project-genesis/project-genesis.min.css">
-
+  {% include partials/meta/head-blog.html %}
 	</head>
   <body>
    <div class="container">
     {% include partials/header/nav-perm-pretty.html %}
-
-
-        <div class="page-content">
-            {{ content }}
-        </div>
-    	</div>
-
+      <div class="page-content" data-blur="data-blur">
+        {{ content }}
+      </div>
+      {% include partials/formOtherPages.html %}
+    </div>
     {% include partials/footer/footer-perm-pretty.html %}
+    <script src="/assets/js/jquery.js"></script>
 
+  <script src="/assets/js/functions2.js"></script>
+  <script src="/assets/js/project-genesis.js"></script>
   </body>
-
 </html>

@@ -27,8 +27,6 @@
 textarea
   min-width: inherit
 
-
-
 #modal
   background:
     color: rgba($primary, 0.75)
@@ -94,7 +92,9 @@ textarea
         width: 95%
 .blur
   filter: blur(5px)
-  overflow-y: hidden
+  // overflow-y: hidden
+  &:before, &:after
+    filter: blur(5px)
 .zindex
   z-index: 10 !important
 .buttons

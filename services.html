@@ -1,0 +1,43 @@
+---
+permalink: "services/"
+title: "Services"
+keywords: "Brand Idenity Design, Front End Web Develpment, Logo Design, Manuel Osorio, Graphic Design, Static Website"
+url-name: services
+---
+
+<!DOCTYPE html>
+<!--
+
+
+This site was built with lots of ♥, Sass and Jekell.
+
+
+Hey, I see you're looking at my source code.
+Unfortunately, this code won't be of much assistance to you. Fortunately for you I make websites
+If you would like for me to work with you in making your website send me an email (hey@manuelosorio.me) and we can talk about prices
+I would get back to you as soon as possible.
+I do web design, icons, logos.
+
+-->
+
+<html lang="en">
+  <head>
+    <head>
+  		{% include partials/meta/head.html %}
+  	</head>
+  </head>
+  <body>
+    <div class="container" id="services-page">
+      {% include partials/header/nav-perm-pretty.html %}
+      {% include partials/header/page-hero.html %}
+
+      {% include partials/pages/services/services.html %}
+    </div>
+    {% include partials/footer/footer-perm-pretty.html %}
+  </body>
+
+  <!-- <script src="../assets/js/jquery.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../assets/js/services.js"></script>
+  <script src="../assets/js/functions2.js"></script>
+</html>

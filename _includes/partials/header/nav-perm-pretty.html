@@ -1,15 +1,16 @@
-<div class="nav">
+<div class="nav" data-blur="data-blur">
     <a href="/" class="logo">{%  include icons/icon-logo.html %}</a>
     <div class="flex-right">
-
         <div class="links">
             {% for item in site.data.settings.menu %}
-                <a {% if item.url == page.url-name %}class="active"{% endif %} href="../{{ item.url }}">{{ item.name }}</a>
+              {% assign current = nil %}
+              {% if item.url == page.url-name  %}
+                {% assign current = 'active' %}
+              {% endif %}
+                <a class="{{ item.class}} {{ current }}" href="/{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}"  {% endif %} >{{ item.name }}</a>
             {% endfor %}
-
-                <a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a>
+                <a href="https://mkdesignz.spreadshirt.com/" target="blank">Store</a>
     </div>
-
 
     <div class="flex-mobile">
        <div class="menu default">
@@ -19,9 +20,11 @@
        </div>
         <div class="mobile-nav">
           {% for item in site.data.settings.menu %}
-            <div>
-              <a {% if item.url == page.url-name %}class="active"{% endif %} href="../{{ item.url }}">{{ item.name }}</a>
-            </div>
+            {% assign current = nil %}
+            {% if item.url == page.url-name  %}
+              {% assign current = 'active' %}
+            {% endif %}
+            <div><a class="{{ item.class}} {{ current }}" href="/{{ item.url }}" target="{{ item.target }}"  {% if item.name == 'Contact' %} id="{{ item.id }}" onclick="" {% endif %} >{{ item.name }}</a></div>
             {% endfor %}
             <div><a href="https://mkdesignz.spreadshirt.com/" target="_blank">Store</a></div>
         </div>

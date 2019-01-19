@@ -1,0 +1,7 @@
+{% for head in site.data.settings.head %}
+  <form id="contactform" method="POST">
+    {% for services in site.data.settings.services %}
+      <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
+    {% endfor %}
+    {% include partials/pages/contact/modal.html %}
+{% endfor %}

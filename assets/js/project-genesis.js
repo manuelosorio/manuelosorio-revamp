@@ -1,42 +1,9 @@
 'use strict';
-document.addEventListener('DOMContentLoaded', function () {
-    // smoothScroll(300);
-    // nav();
-    intializePlayer();
-    setupTimeout()
-});
-
-//smoothScroll is applied from the document ready function
-function smoothScroll (duration) {
-$('a[href^="#"]').on('click', function(event) {
-
-  var target = $( $(this).attr('href') );
-
-  if( target.length ) {
-       event.preventDefault();
-       $('html, body').animate({
-           scrollTop: target.offset().top
-        }, duration);
-    }
-  });
-
-}
-
-function nav(){
-  $('.menu').on('click', function(){
-    $(this).toggleClass('active');
-    $('.container').toggleClass('active');
-    $('.page-content').toggleClass('active');
-    $('.sidebar').toggleClass('active');
-  });
-}
-
-
 var vid, controlBar, playbtn, seekSlider, cTimeText, dTimeText, mutebtn, volumeSlider, fullscreenbtn, player, fullscreen;
 
 function intializePlayer() {
   // Set Object Ref
-
+  setupTimeout()
   vid = document.getElementById('video');
   controlBar = document.getElementById('video_controls_bar');
   playbtn = document.getElementById('playpausebtn');

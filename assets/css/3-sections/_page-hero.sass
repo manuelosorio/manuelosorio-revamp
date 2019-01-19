@@ -1,33 +1,36 @@
 .page-hero
-	// width: 100%
-	width: 100%
-	padding-top: 250px
-	position: absolute
-	top: 0
-	left: 0
-	// transform: skewY(-3deg)
-	background:
-		image: url("/assets/img/hero.png")
-		repeat: repeat
-		size: 100%
-		position: center top
+  // width: 100%
+  width: 100%
+  padding-top: 250px
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  // transform: skewY(-3deg)
+  background:
+    image: url("/assets/img/hero.png")
+    repeat: repeat
+    size: 100%
+    position: center top
 
-	&:after
-		content: ''
-		background: $bg-color-light
-		position: absolute
-		height: 200px
-		width: 100%
-		padding-bottom: 3em
-		z-index: 0
-		bottom: -60%
-		transform: skewY(-4deg)
-		overflow: hidden
+  &:after
+    content: ''
+    background: $bg-color-light
+    position: absolute
+    height: 200px
+    width: 100%
+    padding-bottom: 3em
+    z-index: 0
+    bottom: -60%
+    transform: skewY(-4deg)
+    overflow: hidden
 
-	h3
-		color: $bg-color-light
-		font-size: 2.6em
-		position: absolute
-		z-index: 2
-		top: 10%
-		left: 50%
+  h3
+    color: $bg-color-light
+    font-size: 2.6em
+    position: absolute
+    z-index: 2
+    top: 10%
+    justify-content: center
+    text-align: center
