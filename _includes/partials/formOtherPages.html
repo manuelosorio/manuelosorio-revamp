@@ -1,5 +1,5 @@
 {% for head in site.data.settings.head %}
-  <form id="contactform" method="POST">
+  <form id="contactform" method="POST" action="https://formspree.io/mkvnrvrx">
     {% for services in site.data.settings.services %}
       <input type="radio" id="{{ services.ID }}" name="service" value="{{services.ID}}">
     {% endfor %}

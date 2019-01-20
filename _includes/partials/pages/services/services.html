@@ -1,5 +1,5 @@
 <div class="services-wrap">
-  <form id="contactform" method="post">
+  <form id="contactform" method="post" action="https://formspree.io/mkvnrvrx">
     {% for service in site.data.settings.services %}
       <input type="radio" id="{{ service.ID }}" name="service" value="{{service.ID}}">
       <div class="service-group" data-blur="data-blur">
@@ -9,7 +9,7 @@
         <div class="service-info">
           <p><strong>{{service.title}}</strong>, {{service.info}}</p>
           <span class="buttons service" id="service">
-            <label class="button" for="{{ service.ID }}" onclick="">Contact</label>
+            <label class="button openmodal" for="{{ service.ID }}">Contact</label>
           </span>
         </div>
       </div>

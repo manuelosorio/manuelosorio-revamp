@@ -9,7 +9,7 @@
     <div class="row">
       <input type="hidden" name="_subject" value="Website Contact" />
       <input type="email" class="col col-6" name="_replyto" required="required" placeholder="Your email">
-      <input type="text" class="col col-6" name="company" required="" placeholder="Company Name (optional)">
+      <input type="text" class="col col-6" name="company" placeholder="Company Name (optional)">
     </div>
     <div class="row modal-services">
       {% for services in site.data.settings.services %}
@@ -22,8 +22,11 @@
     <div class="row">
       <textarea name="message" class="col col-12" required="required" placeholder="Tell me about your project..."></textarea>
     </div>
-    <input type="hidden" name="_cc" value="manuelosoiro.mkdesignz@gmail.com" />
-    <input type="hidden" name="_next" value="/contact" />
+    {% if page.url != ""%}
+      <input type="hidden" name="_next" value="{{page.url}}" />
+    {% else %}
+      <input type="hidden" name="_next" value="/" />
+    {% endif %}
     <div class="row">
       <input class="col col-6" type="submit" classvalue="Send">
     </div>
