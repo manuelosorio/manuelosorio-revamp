@@ -59,15 +59,20 @@ function modal() {
       modal = document.querySelector('#modal'),
       i, j;
   for (i = 0; i < contactModal.length; i++){
-    contactModal[i].addEventListener("click", function(){
-      event.preventDefault();
-      for (j = 0; j < blur.length; j++){
-        if (blur[j].id === "featured-services-wrap"){
-          blur[j].classList.add("zindex");
-        } else {
-          blur[j].classList.add('blur');
+    contactModal[i].addEventListener("click", function(e){
+
+        if (e.target.tagName == 'a' || e.target.tagName == 'A') {
+          event.preventDefault();
+          console.log(e.target.tagName);
         }
-      }
+        for (j = 0; j < blur.length; j++){
+          if (blur[j].id === "featured-services-wrap"){
+            blur[j].classList.add("zindex");
+          } else {
+            blur[j].classList.add('blur');
+          }
+        }
+
       modal.classList.add('active');
     });
   }
