@@ -1,102 +1,100 @@
-// body
-// 	height: 2500px
 .hero
-	width: 100%
-	padding-top: 850px
-	position: absolute
-	top: 0
-	left: 0
-	z-index: 1
-	background: url("/assets/img/hero.png") no-repeat fixed center top
-	background-size: cover
-	overflow: hidden
-	&:before
-		content: ''
-		display: block
-		width: 100%
-		height: 150%
-		// overflow: hidden
-		z-index: 0
-		position: absolute
-		padding-bottom: 300px
-		top: 0
-		left: 0
+  width: 100%
+  padding-top: 850px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  background: url("/assets/img/hero.png") no-repeat fixed center top
+  background-size: cover
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 100%
+    height: 150%
+    // overflow: hidden
+    z-index: 0
+    position: absolute
+    padding-bottom: 300px
+    top: 0
+    left: 0
 
-	&:after
-		content: ''
-		display: block
-		background: $bg-color-light
-		height: 200px
-		width: 100%
-		position: absolute
-		padding-bottom: 300px
-		z-index: 0
-		bottom: -50%
-		// left: 50%
-		// margin-left: -1800px
-		transform: skewY(-4deg)
-		// overflow: hidden
-	h1
-		z-index: 3
-		position: absolute
-		top: 3%
-		left: 25%
-		padding: 15px
-		color: $bg-color-light
-		background: rgba($primary, 0.75)
-	h2
-		z-index: 3
-		position: absolute
-		top: 15%
-		left: 26%
-		padding: 15px
-		color: $bg-color-light
-		background: rgba($primary, 0.75)
-	.button
-		display: flex
-		justify-content: center
-		align-items: center
-		font-size: x-large
-		width: 250px
-		height: 50px
-		background: transparent
-		position: absolute
-		top: 50%
-		left: 40%
-		margin: 0 auto
-		border-color: rgba($bg-color-light, 0.75)
-		border-width: 2px
-		border-style: solid
-		// border-radius: 5px
-		transform: skewX(-15deg)
-		color: rgba($bg-color-light, 0.75)
-		+transition(250ms ease-in-out)
-		&:hover
-			background: rgba($bg-color-light, 0.75)
-			color: $primary
+  &:after
+    content: ''
+    display: block
+    background: $bg-color-light
+    height: 200px
+    width: 100%
+    position: absolute
+    padding-bottom: 300px
+    z-index: 0
+    bottom: -50%
+    // left: 50%
+    // margin-left: -1800px
+    transform: skewY(-4deg)
+    // overflow: hidden
+  h1
+    z-index: 3
+    position: absolute
+    top: 3%
+    left: 25%
+    padding: 15px
+    color: $bg-color-light
+    background: rgba($primary, 0.75)
+  h2
+    z-index: 3
+    position: absolute
+    top: 15%
+    left: 26%
+    padding: 15px
+    color: $bg-color-light
+    background: rgba($primary, 0.75)
+  .button
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: x-large
+    width: 250px
+    height: 50px
+    background: transparent
+    position: absolute
+    top: 50%
+    left: 40%
+    margin: 0 auto
+    border-color: rgba($bg-color-light, 0.75)
+    border-width: 2px
+    border-style: solid
+    // border-radius: 5px
+    transform: skewX(-15deg)
+    color: rgba($bg-color-light, 0.75)
+    +transition(250ms ease-in-out)
+    &:hover
+      background: rgba($bg-color-light, 0.75)
+      color: $primary
 @media screen and (max-width: 700px)
-	.hero
-		h1
-			font-size: 55px
-			top: 5%
-			left: 15%
-		h2
-			font-size: 25px
-			top: 16%
-			left: 18.6%
-		.button
-			left: 25%
+  .hero
+    h1
+      font-size: 55px
+      top: 5%
+      left: 15%
+    h2
+      font-size: 25px
+      top: 16%
+      left: 18.6%
+    .button
+      left: 25%
 
 @media screen and (max-width: 480px)
-	.hero
-		padding-top: 700px
-		h1
-			font-size: 35px
-			left: 8%
-		h2
-			font-size: 15px
-			top: 15%
-			left: 10.6%
-		.button
-			top: 40%
-			left: 10%
+  .hero
+    padding-top: 700px
+    h1
+      font-size: 35px
+      left: 8%
+    h2
+      font-size: 15px
+      top: 15%
+      left: 10.6%
+    .button
+      top: 40%
+      left: 10%

@@ -1,74 +1,75 @@
 .blog-header
-    height: 150px
-    width: 100%
-    padding-top: 250px
+  width: 100%
+  padding-top: 250px
+  position: absolute
+  top: 0
+  left: 0
+  // background-color: $primary
+  // text-align: center
+  display: flex
+  justify-content: center
+  background:
+    image: url("/assets/img/hero.png")
+    repeat: repeat
+    size: 100%
+    position: top center
+  &::after
+    content: ''
+    background: $bg-color-light
     position: absolute
-    top: 0
-    left: 0
-    // background-color: $primary
-    // text-align: center
-    display: flex
-    justify-content: center
-    background:
-        image: url("/assets/img/hero.png")
-        repeat: repeat
-        size: 100%
-        position: top center
-    &::after
-        content: ''
-        background: $bg-color-light
-        position: absolute
-        height: 200px
-        width: 100%
-        padding: 3em
-        z-index: 0
-        bottom: -50%
-        transform: skewY(-4deg)
-        overflow: hidden
-    .title
-        font-family: $base-font-family
-        position: relative
-        top: -10em
-        h1
-            color: $bg-color-light
+    height: 200px
+    width: 100%
+    padding: 3em
+    z-index: 0
+    bottom: -50%
+    transform: skewY(-4deg)
+    overflow: hidden
+  .title
+    font-family: $base-font-family
+    position: relative
+    top: -10em
+    h1
+      padding: 15px
+      color: $bg-color-light
+      font-size: 2.6em
 
 #button
-    width: 200px
-    text-align: center
-    margin: 15px auto
-    border-radius: 5px
-    border-color: $primary
-    border-style: solid
-    border-width: 2px
-    &:hover
-        background: $primary
-        color: #ECECEC !important
+  width: 200px
+  text-align: center
+  margin: 15px auto
+  border-radius: 5px
+  border-color: $primary
+  border-style: solid
+  border-width: 2px
+  &:hover
+    background: $primary
+    color: #ECECEC
 
 .wrapper
-    overflow-x: hidden
-    position: relative
-    top: 20em
-    margin-bottom: 20em
+  overflow-x: hidden
+  position: relative
+  top: 20em
+  margin-bottom: 20em
 .post-list
-    margin-top: 25px
+  margin-top: 25px
 .post-underline
-    margin: 25px auto
-    display: block
-    border-bottom-radius: 5px
-    border-bottom-color: $primary
-    border-bottom-style: solid
+  margin: 25px auto
+  display: block
+  border-bottom-radius: 5px
+  border-bottom-color: $primary
+  border-bottom-style: solid
 .pagination
-    font-size: 4em
-    color: $primary
-    text-align: center
+  font-size: 2em
+  color: $primary
+  text-align: center
 
-    a
-        color: $primary-light
-        -webkit-transition: 500ms ease-in-out
-        -moz-transition: 500ms ease-in-out
-        transition: 500ms ease-in-out
-        &:hover
-            color: $primary
+  a
+    color: $primary-light
+    -webkit-transition: 500ms ease-in-out
+    -moz-transition: 500ms ease-in-out
+    transition: 500ms ease-in-out
+    &:hover
+      color: $primary
 
-    .disabled
-        cursor: not-allowed
+  .disabled
+    cursor: not-allowed
