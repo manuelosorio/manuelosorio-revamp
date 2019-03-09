@@ -22,11 +22,11 @@
         <div class="services row" id="services" data-blur="data-blur">
           {% for services in site.data.settings.services %}
           <label class="col col-4 service" for="{{ services.ID}}">
-            <span class="services custom-radio" service="{{ services.ID }}"></span>
-            <div>
+            <span class="services custom-radio" data-service="{{ services.ID }}"></span>
+            <span class="icon">
               <img src="assets/img/services/{{ services.ID}}.svg" alt="{{ services.title }}, Manuel Osorio" title="{{services.title}}, Manuel Osorio">
-              <p>{{ services.title }}</p>
-            </div>
+              <span>{{ services.title }}</span>
+            </span>
           </label>
           {% endfor %}
         </div>

@@ -36,7 +36,8 @@
     justify-content: center
     padding: 15px
     position: relative
-    div
+    .icon
+
       display: flex
       justify-content: center
       flex-direction: column
@@ -49,7 +50,8 @@
         height: 150px
         svg
           fill: $primary
-      p
+      span
+        font-family: $font
         text-align: center
         margin: 15px 0
         font-size: 1.5em
@@ -76,15 +78,15 @@
     transition: $trans
 input[type="radio"]
   display: none
-input#brandID:checked ~ .services .service .custom-radio[service=brandID]::before
+input#brandID:checked ~ .services .service .custom-radio[data-service=brandID]::before
   transform: scale(1)
-input#brandID:checked ~ #modal .modal-services .service .custom-radio[service=brandID]::before
+input#brandID:checked ~ #modal .modal-services .service .custom-radio[data-service=brandID]::before
   transform: scale(1)
-input#logo:checked ~ .services .service .custom-radio[service=logo]::before
+input#logo:checked ~ .services .service .custom-radio[data-service=logo]::before
   transform: scale(1)
-input#logo:checked ~ #modal .modal-services .service .custom-radio[service=logo]::before
+input#logo:checked ~ #modal .modal-services .service .custom-radio[data-service=logo]::before
   transform: scale(1)
-input#webDev:checked ~ .services .service .custom-radio[service=webDev]::before
+input#webDev:checked ~ .services .service .custom-radio[data-service=webDev]::before
   transform: scale(1)
-input#webDev:checked ~ #modal .modal-services .service .custom-radio[service=webDev]::before
+input#webDev:checked ~ #modal .modal-services .service .custom-radio[data-service=webDev]::before
   transform: scale(1)

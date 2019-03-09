@@ -14,8 +14,8 @@
     <div class="row modal-services">
       {% for services in site.data.settings.services %}
         <label class="col col-3 service" for="{{services.ID}}">
-          <span class="custom-radio" service="{{ services.ID }}"></span>
-          <p>{{services.title}}</p>
+          <span class="custom-radio" data-service="{{ services.ID }}"></span>
+          <span>{{services.title}}</span>
         </label>
       {% endfor %}
     </div>
@@ -28,7 +28,7 @@
       <input type="hidden" name="_next" value="/" />
     {% endif %}
     <div class="row">
-      <input class="col col-6" type="submit" classvalue="Send">
+      <input class="col col-6" type="submit" value="Send">
     </div>
   </div>
 </div>

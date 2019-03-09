@@ -31,7 +31,7 @@ url-name: blog
 
           <span>{{ post.preview }}</span>
 
-          <span href="{{ post.url | prepend: site.baseurl }}" style=""></span>
+          <a href="{{ post.url | prepend: site.baseurl }}" style=""></a>
 
           <a class="post-link" id="button" href="{{ post.url | prepend: site.baseurl }}" style="color:#f15e45;">Read More!</a>
 

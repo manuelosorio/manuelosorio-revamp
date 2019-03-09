@@ -3,7 +3,7 @@
 
 head:
 
-- {title: Manuel Osorio  | Graphic Designer, name: 'Manuel Osorio', description: 'Manuel Osorio is a graphic designer that makes awesome things for people.', email: 'hey@manuelosorio.me', keywords: "Manuel Osorio, Graphic Designer, MKDesignz, Logo Designer, Web Designer, Manuel, Osorio, Manny Osorio, Manny, Web Devolper"}
+- {title: Manuel Osorio  | Brand Identity Design - Web Development, name: 'Manuel Osorio', description: 'Manuel Osorio is a graphic designer that makes awesome things for people.', email: 'hey@manuelosorio.me', keywords: "Manuel Osorio, Graphic Designer, MKDesignz, Logo Designer, Web Designer, Manuel, Osorio, Manny Osorio, Brand Identity, Website Devolper"}
 # General Site Settings
 
 
@@ -21,7 +21,7 @@ menu:
 - {name: Work, url: 'work', target: '_self'}
 - {name: Services, url: 'services', target: '_self'}
 - {name: Contact, url: '#', target: '_self', class: 'openmodal'}
-- {name: Blog, url: 'blog', target: '_self'}
+# - {name: Blog, url: 'blog', target: '_self'}
 #- {name: Shop, url: 'shop'}
 
 # navigation:
@@ -69,8 +69,7 @@ skills:
 services:
 - {ID: brandID, title: Brand Identity Design, info: "Includes Logo, business cards, envelopes, social media, may also include animated logo for video"}
 - {ID: logo, title: Logo Design, info: "Includes static client-side websites, designed and stlyed to fit your brand. "}
-- {ID: webDev, title: Website Development, info: "Includes both
-services stated above bundled together"}
+- {ID: webDev, title: Website Development, info: "Includes both services stated above bundled together"}
 
 #--------------------------------------------
 
