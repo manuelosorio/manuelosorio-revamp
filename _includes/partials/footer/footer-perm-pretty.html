@@ -1,24 +1,27 @@
 <footer data-blur="data-blur">
-    <div class="lockup">
-
-        <div>
-
-
-            <div class="logo">{% include icons/icon-logo.html %}</div>
-            <div class="content-wrapper">
-                <nav>
-                    {% for item in site.data.settings.menu %}
-                      {% if item.name != "Contact" %}
-                        <a href="/{{ item.url }}" target="{{ item.target }}">{{ item.name }}</a>
-                      {% endif %}
-                    {% endfor %}
-                        <a href="https://mkdesignz.spreadshirt.com" target="_blank">Store</a>
-                </nav>
-
-                <p class="copyright">&copy; 2014-{{ site.time | date: '%Y' }}, Manuel Osorio All rights reserved.</p>
-
-            </div>
-        </div>
-
+  <div class="lockup">
+    <div>
+      <div class="logo">{% include icons/icon-logo.html %}</div>
+      <div class="content-wrapper">
+        <nav>
+          {% for item in site.data.settings.menu %}
+            {% if item.name != "Contact" %}
+            <a href="/{{ item.url }}" target="{{ item.target }}">{{ item.name }}</a>
+            {% endif %}
+          {% endfor %}
+            <a href="https://mkdesignz.spreadshirt.com" target="_blank">Store</a>
+        </nav>
+        <p class="copyright">&copy; 2014-{{ site.time | date: '%Y' }}, Manuel Osorio All rights reserved.</p>
+      </div>
     </div>
+  </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139933851-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139933851-1');
+  </script>
 </footer>
